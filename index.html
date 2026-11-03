@@ -1,43 +1,97 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Make your next move simpler with Hi-Fi Movers in Dubai. Explore home, office and international moving, packing, furniture installation and storage services.">
-  <meta name="theme-color" content="#A6403B">
-  <title>Hi-Fi Movers | Moving, Relocation & Storage in Dubai</title>
+
+  <title>HiFi Movers | Professional Movers and Packers in Dubai</title>
+  <meta name="description" content="Make your next move easier with HiFi Movers. Explore home and office moving, professional packing, furniture installation and storage services in Dubai.">
+  <meta name="keywords" content="movers and packers Dubai, house moving Dubai, office relocation Dubai, villa movers Dubai, apartment movers Dubai, furniture installation Dubai, storage Dubai, international movers UAE">
+  <meta name="author" content="HiFi Movers LLC">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#911A1D">
+
+  <link rel="canonical" href="https://www.hifimovers.com/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="HiFi Movers | Moving Made Easier in Dubai">
+  <meta property="og:description" content="Residential and commercial moving, packing, furniture installation and storage solutions from HiFi Movers in Dubai.">
+  <meta property="og:url" content="https://www.hifimovers.com/">
+  <meta property="og:site_name" content="HiFi Movers">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="HiFi Movers | Professional Movers and Packers in Dubai">
+  <meta name="twitter:description" content="Explore professional moving, packing, relocation and storage services in Dubai.">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MovingCompany",
+    "name": "HiFi Movers LLC",
+    "url": "https://www.hifimovers.com/",
+    "email": "mail@hifimovers.com",
+    "telephone": "+971555255890",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Al Quoz Industrial Area 4",
+      "postOfficeBoxNumber": "379285",
+      "addressLocality": "Dubai",
+      "addressCountry": "AE"
+    },
+    "areaServed": [
+      {
+        "@type": "City",
+        "name": "Dubai"
+      },
+      {
+        "@type": "Country",
+        "name": "United Arab Emirates"
+      }
+    ],
+    "description": "HiFi Movers provides residential and commercial moving, packing, furniture installation, storage and international relocation services."
+  }
+  </script>
 
   <style>
     :root {
-      --red: #A6403B;
-      --red-dark: #7E302D;
-      --red-light: #C96B62;
-      --charcoal: #343538;
-      --grey: #55565A;
-      --grey-light: #85868A;
-      --sand: #D5BFA6;
-      --heading: #242426;
-      --body: #48484A;
-      --muted: #77777A;
+      --primary: #911A1D;
+      --primary-dark: #701316;
+      --primary-light: #B52A30;
+      --dark: #241012;
+      --dark-soft: #35191B;
+      --heading: #211719;
+      --body: #62575A;
+      --muted: #8A7D80;
       --white: #FFFFFF;
-      --ivory: #F5F2ED;
-      --surface: #E8E6E2;
-      --border: #E1DEDA;
-      --focus: #245D8F;
-      --font-heading: "Barlow Condensed", sans-serif;
-      --font-body: "DM Sans", sans-serif;
-      --container: 1300px;
-      --section-space: 100px;
-      --radius: 5px;
-      --shadow: 0 18px 50px rgba(36, 36, 38, .09);
+      --off-white: #FCF9F9;
+      --light: #F7F3F3;
+      --border: #EAE0E1;
+      --success: #356B50;
+
+      --font-heading: "Poppins", sans-serif;
+      --font-body: "Inter", sans-serif;
+
+      --container: 1160px;
+      --radius-sm: 10px;
+      --radius-md: 18px;
+      --radius-lg: 28px;
+
+      --shadow-sm: 0 8px 24px rgba(45, 16, 19, 0.06);
+      --shadow-md: 0 18px 50px rgba(45, 16, 19, 0.10);
+      --shadow-lg: 0 28px 80px rgba(45, 16, 19, 0.16);
+
+      --transition: 220ms ease;
     }
 
-    *, *::before, *::after { box-sizing: border-box; }
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
 
     html {
       scroll-behavior: smooth;
@@ -49,158 +103,248 @@
       color: var(--body);
       background: var(--white);
       font-family: var(--font-body);
-      font-size: 16px;
-      line-height: 1.7;
+      font-size: 15px;
+      line-height: 1.75;
       -webkit-font-smoothing: antialiased;
     }
 
-    img { display: block; width: 100%; height: auto; }
+    body.menu-open {
+      overflow: hidden;
+    }
 
-    a { color: inherit; text-decoration: none; }
+    img {
+      display: block;
+      max-width: 100%;
+    }
 
-    button, a { -webkit-tap-highlight-color: transparent; }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
 
-    a:focus-visible, button:focus-visible {
-      outline: 3px solid var(--focus);
+    button {
+      font: inherit;
+    }
+
+    button,
+    a {
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    button:focus-visible,
+    a:focus-visible,
+    summary:focus-visible {
+      outline: 3px solid #E9A4A6;
       outline-offset: 4px;
     }
 
+    ::selection {
+      color: var(--white);
+      background: var(--primary);
+    }
+
     .container {
-      width: min(var(--container), calc(100% - 40px));
+      width: min(var(--container), calc(100% - 48px));
       margin-inline: auto;
+    }
+
+    .section {
+      padding: 105px 0;
+    }
+
+    .section-light {
+      background: var(--light);
+    }
+
+    .section-dark {
+      color: rgba(255,255,255,.78);
+      background: var(--dark);
     }
 
     .eyebrow {
       display: inline-flex;
       align-items: center;
-      gap: 11px;
-      color: var(--red);
-      font-size: 13px;
-      font-weight: 700;
-      letter-spacing: .13em;
-      line-height: 1.4;
+      gap: 10px;
+      margin: 0 0 17px;
+      color: var(--primary);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      line-height: 1.5;
       text-transform: uppercase;
     }
 
     .eyebrow::before {
-      content: "";
-      display: inline-block;
       width: 25px;
       height: 2px;
       background: currentColor;
+      content: "";
     }
 
-    h1, h2, h3, h4 {
-      margin: 0;
-      color: var(--heading);
-      font-family: var(--font-heading);
-      font-weight: 700;
-      line-height: .98;
-      text-transform: uppercase;
-    }
-
-    h1 { font-size: clamp(54px, 6.1vw, 82px); }
-    h2 { font-size: clamp(42px, 4.5vw, 62px); }
-    h3 { font-size: clamp(27px, 2.5vw, 34px); }
-    h4 { font-size: 23px; }
-
-    p { margin: 0 0 18px; }
-
-    .section-intro {
-      max-width: 650px;
-      margin-top: 20px;
-      color: var(--muted);
-      font-size: 17px;
+    .section-dark .eyebrow {
+      color: #F0A0A2;
     }
 
     .section-heading {
-      max-width: 760px;
-      margin-bottom: 48px;
-    }
-
-    .section-heading h2 { margin-top: 15px; }
-
-    .section-heading.center {
-      margin-inline: auto;
+      max-width: 720px;
+      margin: 0 auto 52px;
       text-align: center;
     }
 
-    .section-heading.center .eyebrow {
-      justify-content: center;
+    .section-heading h2 {
+      margin: 0;
+      color: var(--heading);
+      font-family: var(--font-heading);
+      font-size: clamp(30px, 4vw, 46px);
+      font-weight: 700;
+      letter-spacing: -1.8px;
+      line-height: 1.2;
     }
 
-    .section-heading.center .section-intro {
-      margin-inline: auto;
+    .section-heading p {
+      max-width: 610px;
+      margin: 17px auto 0;
+      color: var(--body);
+      font-size: 15px;
     }
 
-    .button {
+    .section-dark .section-heading h2 {
+      color: var(--white);
+    }
+
+    .section-dark .section-heading p {
+      color: rgba(255,255,255,.68);
+    }
+
+    .btn {
       display: inline-flex;
-      min-height: 54px;
+      min-height: 52px;
       align-items: center;
       justify-content: center;
-      gap: 12px;
-      padding: 14px 25px;
+      gap: 10px;
+      padding: 14px 23px;
       border: 1px solid transparent;
-      border-radius: var(--radius);
-      background: var(--red);
-      color: var(--white);
-      font-size: 14px;
-      font-weight: 700;
-      letter-spacing: .025em;
-      transition: background .2s ease, transform .2s ease, border-color .2s ease;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 800;
+      line-height: 1.3;
+      transition:
+        background var(--transition),
+        color var(--transition),
+        border-color var(--transition),
+        transform var(--transition),
+        box-shadow var(--transition);
     }
 
-    .button:hover {
+    .btn:hover {
       transform: translateY(-2px);
-      background: var(--red-dark);
     }
 
-    .button-light {
-      border-color: rgba(255,255,255,.6);
-      background: transparent;
+    .btn-primary {
       color: var(--white);
+      background: var(--primary);
+      box-shadow: 0 8px 20px rgba(145, 26, 29, .18);
     }
 
-    .button-light:hover {
-      border-color: var(--white);
+    .btn-primary:hover {
+      background: var(--primary-dark);
+      box-shadow: 0 12px 25px rgba(145, 26, 29, .24);
+    }
+
+    .btn-white {
+      color: var(--primary);
       background: var(--white);
+    }
+
+    .btn-white:hover {
+      background: #F8EDEE;
+    }
+
+    .btn-outline {
       color: var(--heading);
+      border-color: var(--border);
+      background: transparent;
     }
 
-    .button-dark {
-      background: var(--charcoal);
+    .btn-outline:hover {
+      color: var(--primary);
+      border-color: var(--primary);
+      background: var(--white);
     }
 
-    .button-dark:hover { background: var(--red-dark); }
+    .btn-outline-light {
+      color: var(--white);
+      border-color: rgba(255,255,255,.35);
+      background: transparent;
+    }
+
+    .btn-outline-light:hover {
+      color: var(--dark);
+      background: var(--white);
+    }
 
     .text-link {
       display: inline-flex;
       align-items: center;
-      gap: 10px;
-      color: var(--red);
-      font-size: 14px;
-      font-weight: 700;
+      gap: 8px;
+      color: var(--primary);
+      font-size: 13px;
+      font-weight: 800;
     }
 
     .text-link span {
-      font-size: 20px;
-      transition: transform .2s ease;
+      transition: transform var(--transition);
     }
 
-    .text-link:hover span { transform: translateX(5px); }
+    .text-link:hover span {
+      transform: translateX(5px);
+    }
 
     /* Header */
 
-    .site-header {
-      position: relative;
-      z-index: 20;
-      background: var(--white);
-      border-bottom: 1px solid var(--border);
+    .topbar {
+      color: rgba(255,255,255,.83);
+      background: var(--dark);
+      font-size: 11px;
     }
 
-    .header-main {
+    .topbar-inner {
       display: flex;
-      min-height: 86px;
+      min-height: 39px;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .topbar-message {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .topbar-contact {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+    }
+
+    .topbar a:hover {
+      color: #F0A0A2;
+    }
+
+    .site-header {
+      position: sticky;
+      z-index: 1000;
+      top: 0;
+      background: rgba(255,255,255,.96);
+      border-bottom: 1px solid rgba(234,224,225,.8);
+      backdrop-filter: blur(14px);
+    }
+
+    .header-inner {
+      display: flex;
+      min-height: 84px;
       align-items: center;
       justify-content: space-between;
       gap: 30px;
@@ -211,7 +355,6 @@
       flex-shrink: 0;
       align-items: center;
       gap: 11px;
-      color: var(--charcoal);
     }
 
     .brand-mark {
@@ -219,86 +362,96 @@
       width: 43px;
       height: 43px;
       place-items: center;
-      border-radius: 3px;
-      background: var(--red);
+      border-radius: 11px;
       color: var(--white);
+      background: var(--primary);
       font-family: var(--font-heading);
-      font-size: 27px;
-      font-weight: 700;
-      line-height: 1;
+      font-size: 21px;
+      font-weight: 800;
+      letter-spacing: -2px;
+    }
+
+    .brand-copy {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.2;
     }
 
     .brand-name {
-      display: flex;
-      flex-direction: column;
+      color: var(--heading);
       font-family: var(--font-heading);
-      font-size: 27px;
-      font-weight: 700;
-      line-height: .85;
-      text-transform: uppercase;
+      font-size: 21px;
+      font-weight: 800;
+      letter-spacing: -.8px;
     }
 
-    .brand-name small {
-      margin-top: 6px;
-      color: var(--grey-light);
-      font-family: var(--font-body);
+    .brand-tagline {
+      margin-top: 4px;
+      color: var(--muted);
       font-size: 9px;
       font-weight: 700;
-      letter-spacing: .2em;
+      letter-spacing: 1.7px;
+      text-transform: uppercase;
     }
 
     .main-nav {
       display: flex;
       align-items: center;
-      gap: clamp(18px, 2.2vw, 34px);
+      gap: 27px;
     }
 
     .main-nav a {
-      color: var(--charcoal);
-      font-size: 13px;
-      font-weight: 700;
-      transition: color .2s ease;
-    }
-
-    .main-nav a:hover { color: var(--red); }
-
-    .header-actions {
-      display: flex;
-      align-items: center;
-      gap: 18px;
-    }
-
-    .header-phone {
-      display: flex;
-      flex-direction: column;
-      color: var(--charcoal);
-      font-size: 13px;
-      font-weight: 700;
-      line-height: 1.3;
-    }
-
-    .header-phone span {
-      color: var(--muted);
-      font-size: 10px;
-      font-weight: 500;
-    }
-
-    .header-actions .button {
-      min-height: 46px;
-      padding: 11px 18px;
+      position: relative;
+      color: #4C4144;
       font-size: 12px;
+      font-weight: 700;
+      transition: color var(--transition);
+    }
+
+    .main-nav a:not(.nav-cta)::after {
+      position: absolute;
+      right: 0;
+      bottom: -9px;
+      left: 0;
+      height: 2px;
+      background: var(--primary);
+      content: "";
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform var(--transition);
+    }
+
+    .main-nav a:not(.nav-cta):hover {
+      color: var(--primary);
+    }
+
+    .main-nav a:not(.nav-cta):hover::after {
+      transform: scaleX(1);
+    }
+
+    .nav-cta {
+      padding: 12px 18px;
+      border-radius: 7px;
+      color: var(--white) !important;
+      background: var(--primary);
+    }
+
+    .nav-cta:hover {
+      background: var(--primary-dark);
     }
 
     .menu-toggle {
       display: none;
       width: 45px;
       height: 45px;
+      align-items: center;
+      justify-content: center;
       border: 1px solid var(--border);
-      border-radius: 3px;
+      border-radius: 8px;
+      color: var(--heading);
       background: var(--white);
-      color: var(--charcoal);
-      font-size: 24px;
       cursor: pointer;
+      font-size: 23px;
     }
 
     /* Hero */
@@ -306,206 +459,508 @@
     .hero {
       position: relative;
       overflow: hidden;
-      min-height: 690px;
-      background: var(--charcoal);
-      color: var(--white);
+      padding: 88px 0 82px;
+      background:
+        radial-gradient(circle at 85% 15%, rgba(145,26,29,.10), transparent 30%),
+        linear-gradient(115deg, #FCF9F9 0%, #FFFFFF 57%, #F8EEEE 100%);
     }
 
-    .hero-image {
+    .hero::before {
       position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center;
-      opacity: .55;
+      top: -180px;
+      right: -150px;
+      width: 520px;
+      height: 520px;
+      border: 1px solid rgba(145,26,29,.08);
+      border-radius: 50%;
+      content: "";
     }
 
     .hero::after {
       position: absolute;
-      inset: 0;
-      background:
-        linear-gradient(90deg, rgba(28,29,31,.94) 0%, rgba(28,29,31,.83) 45%, rgba(28,29,31,.24) 100%),
-        linear-gradient(0deg, rgba(28,29,31,.45), transparent 50%);
+      top: -115px;
+      right: -85px;
+      width: 390px;
+      height: 390px;
+      border: 1px solid rgba(145,26,29,.08);
+      border-radius: 50%;
       content: "";
     }
 
-    .hero-inner {
+    .hero-grid {
       position: relative;
-      z-index: 2;
-      display: flex;
-      min-height: 690px;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: 1.02fr .98fr;
       align-items: center;
-      padding-block: 85px;
+      gap: 60px;
     }
-
-    .hero-content { max-width: 760px; }
-
-    .hero .eyebrow { color: #E5B3A9; }
-
-    .hero h1 {
-      max-width: 780px;
-      margin-top: 22px;
-      color: var(--white);
-    }
-
-    .hero h1 span { color: #E5A49A; }
 
     .hero-copy {
-      max-width: 550px;
-      margin-top: 26px;
-      color: rgba(255,255,255,.82);
-      font-size: 17px;
+      max-width: 600px;
+    }
+
+    .hero-copy .eyebrow {
+      margin-bottom: 22px;
+    }
+
+    .hero h1 {
+      margin: 0;
+      color: var(--heading);
+      font-family: var(--font-heading);
+      font-size: clamp(42px, 5.2vw, 65px);
+      font-weight: 800;
+      letter-spacing: -3px;
+      line-height: 1.12;
+    }
+
+    .hero h1 span {
+      color: var(--primary);
+    }
+
+    .hero-description {
+      max-width: 520px;
+      margin: 23px 0 0;
+      color: var(--body);
+      font-size: 16px;
+      line-height: 1.85;
     }
 
     .hero-actions {
       display: flex;
       flex-wrap: wrap;
       gap: 13px;
-      margin-top: 34px;
+      margin-top: 32px;
     }
 
     .hero-note {
       display: flex;
       align-items: center;
-      gap: 13px;
-      margin-top: 46px;
-      color: rgba(255,255,255,.8);
+      gap: 11px;
+      margin-top: 28px;
+      color: var(--muted);
       font-size: 12px;
       font-weight: 600;
-      letter-spacing: .05em;
     }
 
-    .hero-note::before {
-      width: 37px;
-      height: 1px;
-      background: var(--sand);
+    .hero-note strong {
+      color: var(--heading);
+    }
+
+    .hero-note-mark {
+      display: grid;
+      width: 29px;
+      height: 29px;
+      flex-shrink: 0;
+      place-items: center;
+      border-radius: 50%;
+      color: var(--primary);
+      background: #F6E6E7;
+      font-size: 14px;
+    }
+
+    /* Abstract moving illustration */
+
+    .hero-visual {
+      position: relative;
+      min-height: 440px;
+      display: grid;
+      place-items: center;
+    }
+
+    .visual-stage {
+      position: relative;
+      width: min(100%, 510px);
+      height: 390px;
+      overflow: hidden;
+      border-radius: 30px;
+      background:
+        linear-gradient(145deg, rgba(255,255,255,.12), transparent 55%),
+        linear-gradient(135deg, #501416, #911A1D 57%, #B52A30);
+      box-shadow: 0 30px 70px rgba(85,17,20,.22);
+    }
+
+    .visual-stage::before {
+      position: absolute;
+      top: -90px;
+      right: -70px;
+      width: 300px;
+      height: 300px;
+      border: 1px solid rgba(255,255,255,.15);
+      border-radius: 50%;
       content: "";
     }
 
-    .hero-side-label {
+    .visual-stage::after {
       position: absolute;
-      right: 22px;
-      bottom: 70px;
+      right: -15px;
+      bottom: -190px;
+      width: 390px;
+      height: 390px;
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: 50%;
+      content: "";
+    }
+
+    .stage-label {
+      position: absolute;
       z-index: 2;
-      color: rgba(255,255,255,.75);
+      top: 28px;
+      left: 30px;
+      color: rgba(255,255,255,.72);
       font-size: 10px;
-      font-weight: 700;
-      letter-spacing: .2em;
+      font-weight: 800;
+      letter-spacing: 2px;
       text-transform: uppercase;
-      writing-mode: vertical-rl;
     }
 
-    /* Intro */
-
-    .intro {
-      padding-block: var(--section-space);
+    .stage-title {
+      position: absolute;
+      z-index: 2;
+      top: 58px;
+      left: 30px;
+      max-width: 240px;
+      color: var(--white);
+      font-family: var(--font-heading);
+      font-size: 29px;
+      font-weight: 700;
+      line-height: 1.25;
     }
+
+    .moving-box {
+      position: absolute;
+      z-index: 2;
+      display: grid;
+      place-items: center;
+      border: 1px solid rgba(255,255,255,.35);
+      background: linear-gradient(145deg, #DFAE83, #B77A51);
+      box-shadow: 0 20px 35px rgba(32,8,9,.23);
+    }
+
+    .moving-box::before,
+    .moving-box::after {
+      position: absolute;
+      content: "";
+      background: rgba(111,52,34,.22);
+    }
+
+    .moving-box::before {
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      width: 2px;
+    }
+
+    .moving-box::after {
+      top: 0;
+      right: 0;
+      left: 0;
+      height: 2px;
+    }
+
+    .box-large {
+      right: 75px;
+      bottom: 61px;
+      width: 180px;
+      height: 165px;
+      border-radius: 5px;
+      transform: rotate(-5deg);
+    }
+
+    .box-medium {
+      right: 220px;
+      bottom: 54px;
+      width: 125px;
+      height: 118px;
+      border-radius: 5px;
+      transform: rotate(5deg);
+    }
+
+    .box-small {
+      right: 54px;
+      bottom: 228px;
+      width: 95px;
+      height: 85px;
+      border-radius: 5px;
+      transform: rotate(7deg);
+    }
+
+    .stage-floor {
+      position: absolute;
+      right: -5%;
+      bottom: 28px;
+      left: -5%;
+      height: 2px;
+      background: rgba(255,255,255,.25);
+      transform: rotate(-5deg);
+    }
+
+    .stage-orbit {
+      position: absolute;
+      z-index: 1;
+      right: 34px;
+      bottom: 37px;
+      width: 290px;
+      height: 190px;
+      border: 1px solid rgba(255,255,255,.24);
+      border-radius: 50%;
+      transform: rotate(-24deg);
+    }
+
+    .floating-card {
+      position: absolute;
+      z-index: 3;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 15px 18px;
+      border: 1px solid rgba(255,255,255,.7);
+      border-radius: 13px;
+      background: rgba(255,255,255,.96);
+      box-shadow: var(--shadow-md);
+    }
+
+    .floating-card-one {
+      top: 30px;
+      right: -23px;
+    }
+
+    .floating-card-two {
+      bottom: 25px;
+      left: -28px;
+    }
+
+    .floating-card-symbol {
+      display: grid;
+      width: 37px;
+      height: 37px;
+      flex-shrink: 0;
+      place-items: center;
+      border-radius: 10px;
+      color: var(--primary);
+      background: #F8EDEE;
+      font-size: 17px;
+      font-weight: 800;
+    }
+
+    .floating-card strong {
+      display: block;
+      color: var(--heading);
+      font-size: 12px;
+      line-height: 1.4;
+    }
+
+    .floating-card small {
+      display: block;
+      margin-top: 3px;
+      color: var(--muted);
+      font-size: 10px;
+      line-height: 1.4;
+    }
+
+    /* Trust strip */
+
+    .trust-strip {
+      position: relative;
+      z-index: 2;
+      padding: 27px 0;
+      border-bottom: 1px solid var(--border);
+      background: var(--white);
+    }
+
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .trust-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      padding: 8px 10px;
+      text-align: left;
+    }
+
+    .trust-symbol {
+      display: grid;
+      width: 39px;
+      height: 39px;
+      flex-shrink: 0;
+      place-items: center;
+      border-radius: 50%;
+      color: var(--primary);
+      background: #F8EDEE;
+      font-size: 15px;
+      font-weight: 800;
+    }
+
+    .trust-item strong {
+      display: block;
+      color: var(--heading);
+      font-size: 12px;
+      line-height: 1.4;
+    }
+
+    .trust-item small {
+      display: block;
+      margin-top: 3px;
+      color: var(--muted);
+      font-size: 10px;
+      line-height: 1.4;
+    }
+
+    /* Introduction */
 
     .intro-grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: .9fr 1.1fr;
       align-items: center;
-      gap: 80px;
+      gap: 75px;
     }
-
-    .intro-copy h2 { margin-top: 17px; }
-
-    .intro-copy p {
-      max-width: 570px;
-      margin-top: 24px;
-      color: var(--muted);
-    }
-
-    .intro-copy .text-link { margin-top: 12px; }
 
     .intro-visual {
       position: relative;
       min-height: 410px;
-      padding: 0 0 35px 35px;
-    }
-
-    .intro-visual img {
-      position: relative;
-      z-index: 1;
-      height: 375px;
-      object-fit: cover;
+      overflow: hidden;
+      border-radius: var(--radius-lg);
+      background:
+        radial-gradient(circle at 75% 20%, rgba(255,255,255,.25), transparent 23%),
+        linear-gradient(145deg, #F4E4E4, #E9D3D4);
     }
 
     .intro-visual::before {
       position: absolute;
-      top: 25px;
-      left: 0;
-      width: 78%;
-      height: 78%;
-      border: 2px solid var(--sand);
+      top: 40px;
+      left: 42px;
+      width: 230px;
+      height: 230px;
+      border: 1px solid rgba(145,26,29,.18);
+      border-radius: 50%;
       content: "";
     }
 
-    .intro-stamp {
+    .intro-visual::after {
       position: absolute;
-      right: -12px;
-      bottom: 0;
-      z-index: 2;
-      width: 185px;
-      padding: 22px;
-      background: var(--red);
-      color: var(--white);
+      right: 35px;
+      bottom: 30px;
+      width: 180px;
+      height: 180px;
+      border: 1px solid rgba(145,26,29,.18);
+      border-radius: 50%;
+      content: "";
     }
 
-    .intro-stamp strong {
+    .intro-visual-content {
+      position: absolute;
+      z-index: 2;
+      right: 32px;
+      bottom: 32px;
+      left: 32px;
+      padding: 28px;
+      border-radius: 17px;
+      color: var(--white);
+      background: var(--primary);
+      box-shadow: var(--shadow-md);
+    }
+
+    .intro-visual-content span {
+      display: block;
+      margin-bottom: 8px;
+      color: rgba(255,255,255,.72);
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 1.8px;
+      text-transform: uppercase;
+    }
+
+    .intro-visual-content strong {
       display: block;
       font-family: var(--font-heading);
-      font-size: 38px;
-      line-height: 1;
+      font-size: 24px;
+      line-height: 1.35;
     }
 
-    .intro-stamp span {
-      display: block;
-      margin-top: 8px;
+    .intro-content h2 {
+      margin: 0;
+      color: var(--heading);
+      font-family: var(--font-heading);
+      font-size: clamp(30px, 3.8vw, 43px);
+      font-weight: 700;
+      letter-spacing: -1.7px;
+      line-height: 1.22;
+    }
+
+    .intro-content > p {
+      margin: 20px 0 0;
+      color: var(--body);
+    }
+
+    .intro-points {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px 22px;
+      margin: 28px 0 30px;
+    }
+
+    .intro-point {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      color: var(--heading);
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .intro-point span {
+      display: grid;
+      width: 21px;
+      height: 21px;
+      flex-shrink: 0;
+      place-items: center;
+      border-radius: 50%;
+      color: var(--success);
+      background: #EAF3ED;
       font-size: 11px;
-      font-weight: 600;
-      line-height: 1.5;
     }
 
-    /* Services */
+    /* Services: exactly six custom SVG service icons */
 
-    .services {
-      padding-block: var(--section-space);
-      background: var(--ivory);
-    }
-
-    .service-grid {
+    .services-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
+      gap: 22px;
     }
 
     .service-card {
       position: relative;
-      min-height: 265px;
-      padding: 32px 30px;
+      min-height: 250px;
+      padding: 30px;
+      overflow: hidden;
       border: 1px solid var(--border);
+      border-radius: var(--radius-md);
       background: var(--white);
-      transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+      transition:
+        transform var(--transition),
+        box-shadow var(--transition),
+        border-color var(--transition);
     }
 
     .service-card:hover {
-      transform: translateY(-5px);
-      border-color: rgba(166,64,59,.35);
-      box-shadow: var(--shadow);
+      border-color: rgba(145,26,29,.25);
+      box-shadow: var(--shadow-md);
+      transform: translateY(-6px);
     }
 
     .service-icon {
       display: grid;
-      width: 56px;
-      height: 56px;
-      margin-bottom: 25px;
+      width: 57px;
+      height: 57px;
       place-items: center;
-      border: 1px solid rgba(166,64,59,.22);
-      border-radius: 50%;
-      background: #FBF5F2;
-      color: var(--red);
+      border-radius: 14px;
+      color: var(--primary);
+      background: #F8EDEE;
     }
 
     .service-icon svg {
@@ -519,415 +974,502 @@
     }
 
     .service-card h3 {
-      margin-bottom: 12px;
-      font-size: 28px;
+      margin: 22px 0 9px;
+      color: var(--heading);
+      font-family: var(--font-heading);
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 1.35;
     }
 
     .service-card p {
-      min-height: 54px;
-      margin-bottom: 18px;
-      color: var(--muted);
-      font-size: 14px;
-      line-height: 1.65;
-    }
-
-    /* Journey */
-
-    .journey {
-      overflow: hidden;
-      padding-block: var(--section-space);
-      background: var(--charcoal);
-      color: var(--white);
-    }
-
-    .journey h2 { color: var(--white); }
-    .journey .section-intro { color: rgba(255,255,255,.65); }
-    .journey .eyebrow { color: #E5B3A9; }
-
-    .journey-track {
-      position: relative;
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 25px;
-      margin-top: 70px;
-    }
-
-    .journey-track::before {
-      position: absolute;
-      top: 26px;
-      right: 8%;
-      left: 8%;
-      height: 1px;
-      background: rgba(213,191,166,.55);
-      content: "";
-    }
-
-    .journey-step {
-      position: relative;
-      z-index: 1;
-    }
-
-    .journey-number {
-      display: grid;
-      width: 53px;
-      height: 53px;
-      margin-bottom: 24px;
-      place-items: center;
-      border: 1px solid var(--sand);
-      border-radius: 50%;
-      background: var(--charcoal);
-      color: #E5B3A9;
-      font-family: var(--font-heading);
-      font-size: 24px;
-      font-weight: 700;
-    }
-
-    .journey-step h3 {
-      margin-bottom: 10px;
-      color: var(--white);
-      font-size: 25px;
-    }
-
-    .journey-step p {
-      max-width: 190px;
-      color: rgba(255,255,255,.63);
+      margin: 0 0 19px;
+      color: var(--body);
       font-size: 13px;
-      line-height: 1.65;
+      line-height: 1.75;
     }
 
-    .journey-footer {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 25px;
-      margin-top: 55px;
-      padding-top: 28px;
-      border-top: 1px solid rgba(255,255,255,.17);
+    .service-card .text-link {
+      font-size: 12px;
     }
 
-    .journey-footer p {
-      max-width: 620px;
-      margin: 0;
-      color: rgba(255,255,255,.7);
-      font-size: 14px;
+    .services-note {
+      max-width: 730px;
+      margin: 35px auto 0;
+      color: var(--muted);
+      font-size: 12px;
+      text-align: center;
     }
 
-    /* Feature image section */
+    /* Why choose us */
 
-    .feature {
-      padding-block: var(--section-space);
-    }
-
-    .feature-grid {
+    .why-grid {
       display: grid;
-      grid-template-columns: 1.05fr .95fr;
+      grid-template-columns: 1fr 1fr;
       align-items: center;
       gap: 75px;
     }
 
-    .feature-image {
-      position: relative;
-      min-height: 480px;
+    .why-content h2 {
+      margin: 0;
+      color: var(--white);
+      font-family: var(--font-heading);
+      font-size: clamp(31px, 4vw, 44px);
+      font-weight: 700;
+      letter-spacing: -1.5px;
+      line-height: 1.2;
     }
 
-    .feature-image img {
-      height: 480px;
-      object-fit: cover;
+    .why-content > p {
+      margin: 20px 0 0;
+      color: rgba(255,255,255,.7);
     }
 
-    .feature-image::after {
-      position: absolute;
-      right: -18px;
-      bottom: -18px;
-      z-index: -1;
-      width: 70%;
-      height: 70%;
-      background: var(--ivory);
-      content: "";
-    }
-
-    .feature-copy h2 { margin-top: 16px; }
-
-    .feature-copy > p {
-      margin-top: 22px;
-      color: var(--muted);
-    }
-
-    .feature-list {
+    .why-list {
       display: grid;
-      gap: 17px;
-      margin: 30px 0;
-      padding: 0;
-      list-style: none;
+      gap: 22px;
+      margin-top: 32px;
     }
 
-    .feature-list li {
+    .why-item {
       display: flex;
       align-items: flex-start;
-      gap: 13px;
-      color: var(--charcoal);
-      font-size: 14px;
-      font-weight: 600;
+      gap: 15px;
     }
 
-    .feature-list li::before {
+    .why-number {
       display: grid;
-      width: 22px;
-      height: 22px;
-      flex: 0 0 22px;
+      width: 35px;
+      height: 35px;
+      flex-shrink: 0;
       place-items: center;
-      border-radius: 50%;
-      background: #F6EAE7;
-      color: var(--red);
-      content: "✓";
+      border: 1px solid rgba(255,255,255,.25);
+      border-radius: 9px;
+      color: #F0A0A2;
+      font-family: var(--font-heading);
       font-size: 12px;
+      font-weight: 800;
+    }
+
+    .why-item h3 {
+      margin: 0;
+      color: var(--white);
+      font-size: 14px;
       font-weight: 700;
     }
 
-    /* Audience pathways */
-
-    .pathways {
-      padding-block: var(--section-space);
-      background: var(--ivory);
+    .why-item p {
+      margin: 5px 0 0;
+      color: rgba(255,255,255,.62);
+      font-size: 12px;
+      line-height: 1.7;
     }
 
-    .pathway-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-    }
-
-    .pathway-card {
+    .why-panel {
       position: relative;
-      display: flex;
       min-height: 390px;
-      flex-direction: column;
-      justify-content: flex-end;
+      padding: 40px;
       overflow: hidden;
-      padding: 30px;
-      background: var(--charcoal);
-      color: var(--white);
+      border: 1px solid rgba(255,255,255,.14);
+      border-radius: var(--radius-lg);
+      background:
+        radial-gradient(circle at 80% 10%, rgba(181,42,48,.55), transparent 30%),
+        linear-gradient(145deg, #401416, #65191D);
     }
 
-    .pathway-card img {
+    .why-panel::before {
       position: absolute;
-      inset: 0;
-      height: 100%;
-      object-fit: cover;
-      opacity: .62;
-      transition: transform .5s ease;
-    }
-
-    .pathway-card:hover img { transform: scale(1.05); }
-
-    .pathway-card::after {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(0deg, rgba(28,29,31,.95), rgba(28,29,31,.05) 90%);
+      right: -85px;
+      bottom: -130px;
+      width: 360px;
+      height: 360px;
+      border: 1px solid rgba(255,255,255,.15);
+      border-radius: 50%;
       content: "";
     }
 
-    .pathway-content {
+    .why-panel-inner {
       position: relative;
       z-index: 1;
     }
 
-    .pathway-content .eyebrow { color: #E5B3A9; }
-
-    .pathway-content h3 {
-      margin-top: 12px;
-      color: var(--white);
-      font-size: 35px;
+    .why-panel-label {
+      color: #F0A0A2;
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      text-transform: uppercase;
     }
 
-    .pathway-content p {
-      max-width: 320px;
-      margin: 13px 0 20px;
-      color: rgba(255,255,255,.77);
-      font-size: 13px;
-    }
-
-    .pathway-content .text-link { color: #F0C7BE; }
-
-    /* Storage */
-
-    .storage {
-      padding-block: var(--section-space);
-    }
-
-    .storage-panel {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      min-height: 440px;
-      background: var(--ivory);
-    }
-
-    .storage-image { min-height: 440px; }
-
-    .storage-image img {
-      height: 100%;
-      min-height: 440px;
-      object-fit: cover;
-    }
-
-    .storage-copy {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: center;
-      padding: clamp(30px, 5vw, 75px);
-    }
-
-    .storage-copy h2 { margin-top: 16px; }
-
-    .storage-copy p {
-      margin-top: 22px;
-      color: var(--muted);
-    }
-
-    /* Trust / company facts */
-
-    .trust {
-      padding-block: 65px;
-      background: var(--red);
-      color: var(--white);
-    }
-
-    .trust-grid {
-      display: grid;
-      grid-template-columns: 1.2fr repeat(3, 1fr);
-      align-items: center;
-      gap: 30px;
-    }
-
-    .trust-intro h2 {
-      color: var(--white);
-      font-size: 37px;
-    }
-
-    .trust-intro p {
-      margin: 12px 0 0;
-      color: rgba(255,255,255,.78);
-      font-size: 13px;
-    }
-
-    .trust-item {
-      min-height: 90px;
-      padding-left: 25px;
-      border-left: 1px solid rgba(255,255,255,.35);
-    }
-
-    .trust-item strong {
-      display: block;
+    .why-panel h3 {
+      max-width: 330px;
+      margin: 19px 0;
       color: var(--white);
       font-family: var(--font-heading);
-      font-size: 32px;
-      line-height: 1.1;
+      font-size: 31px;
+      font-weight: 700;
+      line-height: 1.3;
     }
 
-    .trust-item span {
+    .why-panel p {
+      max-width: 330px;
+      color: rgba(255,255,255,.7);
+      font-size: 13px;
+    }
+
+    .why-panel-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 15px;
+      margin-top: 42px;
+      padding-top: 23px;
+      border-top: 1px solid rgba(255,255,255,.18);
+    }
+
+    .why-panel-bottom span {
+      color: rgba(255,255,255,.72);
+      font-size: 11px;
+      font-weight: 700;
+    }
+
+    .why-panel-bottom strong {
+      color: var(--white);
+      font-family: var(--font-heading);
+      font-size: 14px;
+    }
+
+    /* Process */
+
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      counter-reset: process;
+    }
+
+    .process-card {
+      position: relative;
+      padding: 28px 23px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      background: var(--white);
+      counter-increment: process;
+    }
+
+    .process-card::before {
       display: block;
-      margin-top: 8px;
-      color: rgba(255,255,255,.8);
+      margin-bottom: 24px;
+      color: #E7C5C7;
+      content: "0" counter(process);
+      font-family: var(--font-heading);
+      font-size: 36px;
+      font-weight: 800;
+      line-height: 1;
+    }
+
+    .process-card h3 {
+      margin: 0;
+      color: var(--heading);
+      font-family: var(--font-heading);
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    .process-card p {
+      margin: 11px 0 0;
+      color: var(--body);
       font-size: 12px;
-      line-height: 1.5;
+      line-height: 1.75;
+    }
+
+    /* International and storage feature */
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 23px;
+    }
+
+    .feature-card {
+      position: relative;
+      min-height: 350px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 38px;
+      overflow: hidden;
+      border-radius: var(--radius-lg);
+      color: var(--white);
+      background: linear-gradient(145deg, #6F171B, #911A1D);
+    }
+
+    .feature-card-storage {
+      background: linear-gradient(145deg, #2E2022, #5A292D);
+    }
+
+    .feature-card::before {
+      position: absolute;
+      top: -100px;
+      right: -65px;
+      width: 310px;
+      height: 310px;
+      border: 1px solid rgba(255,255,255,.18);
+      border-radius: 50%;
+      content: "";
+    }
+
+    .feature-card::after {
+      position: absolute;
+      right: 20px;
+      bottom: -190px;
+      width: 370px;
+      height: 370px;
+      border: 1px solid rgba(255,255,255,.13);
+      border-radius: 50%;
+      content: "";
+    }
+
+    .feature-content {
+      position: relative;
+      z-index: 1;
+      max-width: 450px;
+    }
+
+    .feature-label {
+      color: rgba(255,255,255,.7);
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .feature-card h3 {
+      margin: 14px 0 12px;
+      color: var(--white);
+      font-family: var(--font-heading);
+      font-size: 30px;
+      font-weight: 700;
+      letter-spacing: -.7px;
+      line-height: 1.25;
+    }
+
+    .feature-card p {
+      margin: 0 0 23px;
+      color: rgba(255,255,255,.76);
+      font-size: 13px;
+      line-height: 1.8;
+    }
+
+    /* Testimonials */
+
+    .testimonial-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .testimonial-card {
+      padding: 30px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      background: var(--white);
+    }
+
+    .testimonial-stars {
+      color: #C18B35;
+      font-size: 15px;
+      letter-spacing: 3px;
+    }
+
+    .testimonial-card blockquote {
+      margin: 19px 0 24px;
+      color: var(--heading);
+      font-size: 13px;
+      line-height: 1.85;
+    }
+
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding-top: 18px;
+      border-top: 1px solid var(--border);
+    }
+
+    .author-avatar {
+      display: grid;
+      width: 39px;
+      height: 39px;
+      flex-shrink: 0;
+      place-items: center;
+      border-radius: 50%;
+      color: var(--primary);
+      background: #F8EDEE;
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .testimonial-author strong {
+      display: block;
+      color: var(--heading);
+      font-size: 12px;
+    }
+
+    .testimonial-author small {
+      display: block;
+      margin-top: 2px;
+      color: var(--muted);
+      font-size: 10px;
+    }
+
+    .review-link {
+      margin-top: 30px;
+      text-align: center;
     }
 
     /* FAQ */
 
-    .faq {
-      padding-block: var(--section-space);
-    }
-
-    .faq-grid {
+    .faq-layout {
       display: grid;
-      grid-template-columns: .8fr 1.2fr;
-      gap: 85px;
+      grid-template-columns: .72fr 1.28fr;
+      gap: 75px;
     }
 
-    .faq-heading h2 { margin-top: 16px; }
-
-    .faq-heading p {
-      margin-top: 20px;
-      color: var(--muted);
-    }
-
-    .faq-list { border-top: 1px solid var(--border); }
-
-    .faq-item { border-bottom: 1px solid var(--border); }
-
-    .faq-item summary {
-      position: relative;
-      padding: 22px 45px 22px 0;
-      color: var(--charcoal);
-      font-size: 15px;
+    .faq-intro h2 {
+      margin: 0;
+      color: var(--heading);
+      font-family: var(--font-heading);
+      font-size: clamp(30px, 3.6vw, 42px);
       font-weight: 700;
-      cursor: pointer;
-      list-style: none;
+      letter-spacing: -1.5px;
+      line-height: 1.2;
     }
 
-    .faq-item summary::-webkit-details-marker { display: none; }
-
-    .faq-item summary::after {
-      position: absolute;
-      top: 19px;
-      right: 5px;
-      color: var(--red);
-      content: "+";
-      font-size: 24px;
-      font-weight: 400;
-    }
-
-    .faq-item[open] summary::after { content: "−"; }
-
-    .faq-answer {
-      max-width: 680px;
-      padding: 0 35px 20px 0;
-      color: var(--muted);
+    .faq-intro p {
+      margin: 18px 0 25px;
+      color: var(--body);
       font-size: 14px;
     }
 
-    /* CTA */
+    .faq-list {
+      display: grid;
+      gap: 12px;
+    }
+
+    .faq-item {
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: var(--white);
+    }
+
+    .faq-item summary {
+      position: relative;
+      display: flex;
+      min-height: 65px;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 17px 21px;
+      color: var(--heading);
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 700;
+      list-style: none;
+    }
+
+    .faq-item summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .faq-item summary::after {
+      display: grid;
+      width: 27px;
+      height: 27px;
+      flex-shrink: 0;
+      place-items: center;
+      border-radius: 50%;
+      color: var(--primary);
+      background: #F8EDEE;
+      content: "+";
+      font-size: 18px;
+      font-weight: 500;
+      transition: transform var(--transition);
+    }
+
+    .faq-item[open] summary::after {
+      content: "−";
+    }
+
+    .faq-answer {
+      padding: 0 21px 20px;
+      color: var(--body);
+      font-size: 12px;
+      line-height: 1.8;
+    }
+
+    .faq-answer p {
+      margin: 0;
+    }
+
+    /* Final CTA */
 
     .final-cta {
       position: relative;
       overflow: hidden;
-      padding-block: 85px;
-      background: var(--ivory);
+      padding: 83px 0;
+      color: var(--white);
+      background:
+        radial-gradient(circle at 90% 15%, rgba(255,255,255,.11), transparent 25%),
+        linear-gradient(115deg, #721518, #911A1D 60%, #A9282D);
     }
 
-    .final-cta::after {
+    .final-cta::before {
       position: absolute;
-      top: -110px;
-      right: -70px;
-      width: 360px;
-      height: 360px;
-      border: 1px solid rgba(166,64,59,.16);
+      top: -200px;
+      right: -90px;
+      width: 500px;
+      height: 500px;
+      border: 1px solid rgba(255,255,255,.14);
       border-radius: 50%;
-      box-shadow: 0 0 0 35px rgba(166,64,59,.035), 0 0 0 70px rgba(166,64,59,.025);
       content: "";
     }
 
-    .cta-inner {
+    .final-cta-inner {
       position: relative;
       z-index: 1;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 40px;
+      gap: 45px;
     }
 
-    .cta-copy { max-width: 720px; }
-
-    .cta-copy h2 { margin-top: 14px; }
-
-    .cta-copy p {
-      max-width: 580px;
-      margin-top: 17px;
-      color: var(--muted);
+    .final-cta-copy {
+      max-width: 670px;
     }
 
-    .cta-actions {
+    .final-cta .eyebrow {
+      color: #F4C6C8;
+    }
+
+    .final-cta h2 {
+      margin: 0;
+      color: var(--white);
+      font-family: var(--font-heading);
+      font-size: clamp(30px, 4vw, 46px);
+      font-weight: 700;
+      letter-spacing: -1.6px;
+      line-height: 1.2;
+    }
+
+    .final-cta p {
+      max-width: 590px;
+      margin: 15px 0 0;
+      color: rgba(255,255,255,.78);
+      font-size: 14px;
+    }
+
+    .final-cta-actions {
       display: flex;
       flex-shrink: 0;
       flex-direction: column;
@@ -937,35 +1479,40 @@
     /* Footer */
 
     .site-footer {
-      padding-top: 70px;
-      background: #252629;
+      padding: 75px 0 0;
       color: rgba(255,255,255,.7);
+      background: #1D1012;
     }
 
     .footer-grid {
       display: grid;
-      grid-template-columns: 1.35fr 1fr 1fr 1.1fr;
-      gap: 55px;
+      grid-template-columns: 1.35fr .8fr .9fr 1fr;
+      gap: 48px;
       padding-bottom: 55px;
     }
 
-    .footer-brand .brand { color: var(--white); }
-    .footer-brand .brand-name small { color: rgba(255,255,255,.55); }
-
-    .footer-about {
-      max-width: 300px;
-      margin-top: 22px;
-      color: rgba(255,255,255,.62);
-      font-size: 13px;
+    .footer-brand .brand-name {
+      color: var(--white);
     }
 
-    .footer-column h3 {
-      margin-bottom: 22px;
+    .footer-brand .brand-tagline {
+      color: rgba(255,255,255,.5);
+    }
+
+    .footer-brand p {
+      max-width: 290px;
+      margin: 22px 0 20px;
+      color: rgba(255,255,255,.62);
+      font-size: 12px;
+      line-height: 1.85;
+    }
+
+    .footer-heading {
+      margin: 0 0 22px;
       color: var(--white);
-      font-family: var(--font-body);
-      font-size: 13px;
+      font-family: var(--font-heading);
+      font-size: 14px;
       font-weight: 700;
-      letter-spacing: .08em;
     }
 
     .footer-links {
@@ -973,776 +1520,1643 @@
       gap: 12px;
     }
 
-    .footer-links a,
-    .footer-contact a,
-    .footer-contact p {
+    .footer-links a {
+      width: fit-content;
       color: rgba(255,255,255,.65);
-      font-size: 13px;
-      transition: color .2s ease;
+      font-size: 12px;
+      transition: color var(--transition);
     }
 
-    .footer-links a:hover,
-    .footer-contact a:hover { color: var(--white); }
+    .footer-links a:hover {
+      color: #F0A0A2;
+    }
 
-    .footer-contact p { margin-bottom: 12px; }
+    .footer-contact {
+      display: grid;
+      gap: 15px;
+    }
+
+    .footer-contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 11px;
+      color: rgba(255,255,255,.68);
+      font-size: 12px;
+      line-height: 1.7;
+    }
+
+    .footer-contact-item strong {
+      color: var(--white);
+      font-weight: 700;
+    }
+
+    .footer-contact-symbol {
+      display: grid;
+      width: 27px;
+      height: 27px;
+      flex-shrink: 0;
+      place-items: center;
+      border-radius: 7px;
+      color: #F0A0A2;
+      background: rgba(255,255,255,.08);
+      font-size: 12px;
+    }
 
     .footer-bottom {
       display: flex;
+      min-height: 65px;
       align-items: center;
       justify-content: space-between;
       gap: 20px;
-      padding-block: 22px;
-      border-top: 1px solid rgba(255,255,255,.13);
-      color: rgba(255,255,255,.48);
-      font-size: 11px;
+      border-top: 1px solid rgba(255,255,255,.12);
+      color: rgba(255,255,255,.46);
+      font-size: 10px;
     }
 
-    .footer-bottom a { color: rgba(255,255,255,.7); }
+    .footer-bottom a:hover {
+      color: var(--white);
+    }
 
-    /* Mobile bottom actions */
+    .footer-bottom-links {
+      display: flex;
+      gap: 20px;
+    }
 
-    .mobile-cta {
-      position: fixed;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      z-index: 50;
+    /* Mobile fixed actions: exactly two persistent buttons */
+
+    .mobile-actions {
       display: none;
-      grid-template-columns: 1fr 1fr;
-      gap: 9px;
-      padding: 10px max(12px, env(safe-area-inset-right)) calc(10px + env(safe-area-inset-bottom)) max(12px, env(safe-area-inset-left));
-      border-top: 1px solid var(--border);
-      background: rgba(255,255,255,.97);
-      box-shadow: 0 -7px 24px rgba(36,36,38,.08);
-      backdrop-filter: blur(12px);
     }
 
-    .mobile-cta .button {
-      min-height: 48px;
-      padding: 10px 12px;
-      font-size: 12px;
+    /* Reveal animation */
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(22px);
+      transition:
+        opacity 650ms ease,
+        transform 650ms ease;
+    }
+
+    .reveal.is-visible {
+      opacity: 1;
+      transform: translateY(0);
     }
 
     /* Responsive */
 
-    @media (max-width: 1080px) {
-      :root { --section-space: 80px; }
+    @media (max-width: 1050px) {
+      .main-nav {
+        gap: 17px;
+      }
 
-      .main-nav { gap: 16px; }
-      .main-nav a { font-size: 12px; }
-      .header-phone { display: none; }
-      .intro-grid, .feature-grid { gap: 45px; }
-      .faq-grid { gap: 50px; }
-      .footer-grid { gap: 30px; }
+      .main-nav a {
+        font-size: 11px;
+      }
+
+      .hero-grid {
+        gap: 35px;
+      }
+
+      .intro-grid,
+      .why-grid {
+        gap: 45px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1.2fr 1fr 1fr;
+      }
+
+      .footer-contact-column {
+        grid-column: 1 / -1;
+      }
     }
 
     @media (max-width: 820px) {
-      :root { --section-space: 50px; }
-
-      .container { width: calc(100% - 30px); }
-
-      .header-main { min-height: 75px; }
+      .section {
+        padding: 78px 0;
+      }
 
       .menu-toggle {
-        display: grid;
-        place-items: center;
+        display: inline-flex;
       }
-
-      .header-actions .button { display: none; }
 
       .main-nav {
-        position: absolute;
-        top: 100%;
+        position: fixed;
+        top: 84px;
         right: 0;
+        bottom: 0;
         left: 0;
-        display: none;
+        display: flex;
         align-items: stretch;
+        flex-direction: column;
         gap: 0;
-        padding: 10px 20px 20px;
-        border-top: 1px solid var(--border);
+        padding: 22px 24px 110px;
+        overflow-y: auto;
         background: var(--white);
-        box-shadow: 0 15px 20px rgba(0,0,0,.08);
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(-10px);
+        transition:
+          opacity var(--transition),
+          transform var(--transition);
       }
 
-      .main-nav.is-open { display: flex; flex-direction: column; }
+      .main-nav.is-open {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0);
+      }
 
       .main-nav a {
-        padding: 13px 5px;
+        padding: 17px 5px;
         border-bottom: 1px solid var(--border);
         font-size: 14px;
       }
 
-      .hero, .hero-inner { min-height: 610px; }
+      .main-nav a::after {
+        display: none;
+      }
 
-      .hero-inner { padding-block: 70px; }
-      .hero-side-label { display: none; }
+      .main-nav .nav-cta {
+        margin-top: 18px;
+        padding: 15px 20px;
+        border: 0;
+        text-align: center;
+      }
 
-      .intro-grid, .feature-grid {
+      .hero {
+        padding: 68px 0 65px;
+      }
+
+      .hero-grid {
         grid-template-columns: 1fr;
-        gap: 40px;
+        gap: 45px;
       }
 
-      .intro-visual { max-width: 620px; }
-
-      .service-grid { grid-template-columns: repeat(2, 1fr); }
-
-      .journey-track {
-        grid-template-columns: repeat(3, 1fr);
-        row-gap: 35px;
+      .hero-copy {
+        max-width: 680px;
       }
 
-      .journey-track::before { display: none; }
-
-      .pathway-grid { grid-template-columns: 1fr 1fr; }
-      .pathway-card:last-child { grid-column: 1 / -1; min-height: 320px; }
-
-      .storage-panel { grid-template-columns: 1fr 1fr; }
+      .hero-visual {
+        width: min(100%, 570px);
+        margin-inline: auto;
+      }
 
       .trust-grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
       }
 
-      .trust-intro { grid-column: 1 / -1; }
+      .intro-grid,
+      .why-grid,
+      .faq-layout {
+        grid-template-columns: 1fr;
+        gap: 42px;
+      }
 
-      .trust-item:first-of-type { padding-left: 0; border-left: 0; }
+      .intro-visual {
+        min-height: 340px;
+      }
 
-      .faq-grid { grid-template-columns: 1fr; gap: 30px; }
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
 
-      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .process-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
 
-      .cta-inner { align-items: flex-start; flex-direction: column; }
-      .cta-actions { flex-direction: row; flex-wrap: wrap; }
+      .faq-intro {
+        max-width: 600px;
+      }
+
+      .final-cta-inner {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 28px;
+      }
+
+      .final-cta-actions {
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+
+      .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 38px;
+      }
+
+      .footer-contact-column {
+        grid-column: auto;
+      }
     }
 
     @media (max-width: 560px) {
-      :root { --section-space: 30px; }
-
-      body { padding-bottom: 75px; font-size: 15px; }
-
-      .container { width: calc(100% - 20px); }
-
-      h1 { font-size: clamp(44px, 13vw, 62px); }
-      h2 { font-size: 39px; }
-      h3 { font-size: 26px; }
-
-      .header-main { min-height: 68px; }
-      .brand-mark { width: 38px; height: 38px; font-size: 24px; }
-      .brand-name { font-size: 24px; }
-
-      .hero, .hero-inner { min-height: 590px; }
-
-      .hero-image { object-position: 60% center; }
-
-      .hero::after {
-        background: linear-gradient(90deg, rgba(28,29,31,.93), rgba(28,29,31,.68));
+      body {
+        font-size: 14px;
       }
 
-      .hero-inner { padding-block: 55px; }
-      .hero-copy { font-size: 15px; }
-      .hero-actions { align-items: stretch; flex-direction: column; max-width: 280px; }
-      .hero-actions .button { width: 100%; }
+      .container {
+        width: min(100% - 34px, var(--container));
+      }
 
-      .hero-note { margin-top: 30px; font-size: 10px; }
+      .section {
+        padding: 67px 0;
+      }
+
+      .topbar-inner {
+        min-height: 36px;
+        justify-content: center;
+      }
+
+      .topbar-message {
+        font-size: 10px;
+        text-align: center;
+      }
+
+      .topbar-contact {
+        display: none;
+      }
+
+      .header-inner {
+        min-height: 72px;
+      }
+
+      .main-nav {
+        top: 72px;
+      }
+
+      .brand-mark {
+        width: 39px;
+        height: 39px;
+      }
+
+      .brand-name {
+        font-size: 19px;
+      }
+
+      .hero {
+        padding: 57px 0 55px;
+      }
+
+      .hero h1 {
+        font-size: clamp(39px, 11vw, 52px);
+        letter-spacing: -2.4px;
+      }
+
+      .hero-description {
+        font-size: 14px;
+      }
+
+      .hero-actions {
+        align-items: stretch;
+        flex-direction: column;
+      }
+
+      .hero-actions .btn {
+        width: 100%;
+      }
+
+      .hero-visual {
+        min-height: 335px;
+      }
+
+      .visual-stage {
+        height: 300px;
+        border-radius: 21px;
+      }
+
+      .stage-label {
+        top: 21px;
+        left: 20px;
+      }
+
+      .stage-title {
+        top: 48px;
+        left: 20px;
+        max-width: 190px;
+        font-size: 23px;
+      }
+
+      .box-large {
+        right: 35px;
+        bottom: 48px;
+        width: 140px;
+        height: 125px;
+      }
+
+      .box-medium {
+        right: 145px;
+        bottom: 43px;
+        width: 100px;
+        height: 92px;
+      }
+
+      .box-small {
+        right: 32px;
+        bottom: 180px;
+        width: 75px;
+        height: 68px;
+      }
+
+      .stage-orbit {
+        right: 10px;
+        bottom: 23px;
+        width: 240px;
+        height: 145px;
+      }
+
+      .floating-card {
+        gap: 8px;
+        padding: 10px 12px;
+      }
+
+      .floating-card-one {
+        top: 8px;
+        right: -5px;
+      }
+
+      .floating-card-two {
+        bottom: 4px;
+        left: -5px;
+      }
+
+      .floating-card-symbol {
+        width: 30px;
+        height: 30px;
+        font-size: 13px;
+      }
+
+      .floating-card strong {
+        font-size: 10px;
+      }
+
+      .floating-card small {
+        font-size: 9px;
+      }
+
+      .trust-grid {
+        gap: 10px 4px;
+      }
+
+      .trust-item {
+        justify-content: flex-start;
+        gap: 8px;
+        padding: 8px 3px;
+      }
+
+      .trust-symbol {
+        width: 33px;
+        height: 33px;
+        font-size: 12px;
+      }
+
+      .trust-item strong {
+        font-size: 10px;
+      }
+
+      .trust-item small {
+        font-size: 9px;
+      }
+
+      .section-heading {
+        margin-bottom: 36px;
+      }
+
+      .section-heading h2,
+      .intro-content h2,
+      .why-content h2,
+      .faq-intro h2 {
+        font-size: 31px;
+        letter-spacing: -1.2px;
+      }
 
       .intro-visual {
-        min-height: 300px;
-        padding: 0 0 25px 20px;
+        min-height: 285px;
       }
 
-      .intro-visual img { height: 280px; }
-      .intro-stamp { right: -3px; width: 150px; padding: 15px; }
-      .intro-stamp strong { font-size: 31px; }
+      .intro-visual-content {
+        right: 18px;
+        bottom: 18px;
+        left: 18px;
+        padding: 22px;
+      }
 
-      .section-heading { margin-bottom: 30px; }
-      .section-intro { font-size: 15px; }
+      .intro-visual-content strong {
+        font-size: 20px;
+      }
 
-      .service-grid { grid-template-columns: 1fr; gap: 12px; }
+      .intro-points {
+        grid-template-columns: 1fr;
+        gap: 13px;
+      }
+
+      .services-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+      }
 
       .service-card {
-        display: grid;
-        grid-template-columns: 52px 1fr;
-        column-gap: 17px;
-        min-height: 0;
-        padding: 22px 18px;
+        min-height: auto;
+        padding: 25px;
       }
 
-      .service-icon {
-        grid-row: 1 / span 3;
-        width: 48px;
-        height: 48px;
-        margin: 0;
+      .service-card h3 {
+        margin-top: 17px;
       }
 
-      .service-card h3 { align-self: center; margin: 0; font-size: 25px; }
-      .service-card p { min-height: 0; margin: 8px 0 12px; }
-      .service-card .text-link { grid-column: 2; }
+      .why-panel {
+        min-height: 350px;
+        padding: 28px;
+      }
 
-      .journey-track {
+      .why-panel h3 {
+        font-size: 27px;
+      }
+
+      .process-grid {
+        grid-template-columns: 1fr;
+        gap: 13px;
+      }
+
+      .process-card {
+        padding: 24px;
+      }
+
+      .process-card::before {
+        margin-bottom: 15px;
+        font-size: 29px;
+      }
+
+      .feature-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+      }
+
+      .feature-card {
+        min-height: 310px;
+        padding: 28px;
+      }
+
+      .feature-card h3 {
+        font-size: 26px;
+      }
+
+      .testimonial-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+      }
+
+      .testimonial-card {
+        padding: 25px;
+      }
+
+      .faq-layout {
+        gap: 28px;
+      }
+
+      .faq-item summary {
+        padding: 15px;
+        font-size: 12px;
+      }
+
+      .faq-answer {
+        padding: 0 15px 17px;
+      }
+
+      .final-cta {
+        padding: 67px 0;
+      }
+
+      .final-cta h2 {
+        font-size: 33px;
+        letter-spacing: -1.2px;
+      }
+
+      .final-cta-actions {
+        width: 100%;
+        flex-direction: column;
+      }
+
+      .final-cta-actions .btn {
+        width: 100%;
+      }
+
+      .footer-grid {
         grid-template-columns: 1fr 1fr;
-        gap: 27px 15px;
-        margin-top: 40px;
+        gap: 34px 20px;
       }
 
-      .journey-number { margin-bottom: 14px; }
-      .journey-step h3 { font-size: 23px; }
-      .journey-step p { font-size: 12px; }
+      .footer-brand,
+      .footer-contact-column {
+        grid-column: 1 / -1;
+      }
 
-      .journey-footer { align-items: flex-start; flex-direction: column; }
+      .site-footer {
+        padding-top: 58px;
+        padding-bottom: 80px;
+      }
 
-      .feature-image, .feature-image img { min-height: 310px; height: 310px; }
+      .footer-bottom {
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+        gap: 8px;
+        padding: 17px 0;
+      }
 
-      .pathway-grid { grid-template-columns: 1fr; gap: 13px; }
-      .pathway-card, .pathway-card:last-child { grid-column: auto; min-height: 320px; }
+      .mobile-actions {
+        position: fixed;
+        z-index: 1200;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        padding: 11px 15px calc(11px + env(safe-area-inset-bottom));
+        border-top: 1px solid rgba(234,224,225,.9);
+        background: rgba(255,255,255,.97);
+        box-shadow: 0 -8px 30px rgba(36,16,18,.09);
+        backdrop-filter: blur(14px);
+      }
 
-      .storage-panel { grid-template-columns: 1fr; }
-      .storage-image, .storage-image img { min-height: 260px; height: 260px; }
-      .storage-copy { padding: 27px 22px; }
-
-      .trust-grid { grid-template-columns: 1fr 1fr; gap: 25px 15px; }
-      .trust-intro { grid-column: 1 / -1; }
-      .trust-item { min-height: 75px; padding-left: 14px; }
-      .trust-item strong { font-size: 27px; }
-      .trust-item span { font-size: 11px; }
-
-      .faq-item summary { font-size: 14px; }
-
-      .final-cta { padding-block: 55px; }
-      .cta-actions { width: 100%; flex-direction: column; }
-      .cta-actions .button { width: 100%; }
-
-      .footer-grid { grid-template-columns: 1fr 1fr; gap: 35px 20px; }
-      .footer-brand { grid-column: 1 / -1; }
-      .footer-column h3 { margin-bottom: 15px; }
-      .footer-bottom { align-items: flex-start; flex-direction: column; gap: 8px; }
-
-      .mobile-cta { display: grid; }
+      .mobile-actions .btn {
+        min-height: 48px;
+        padding: 11px 12px;
+        font-size: 12px;
+      }
     }
 
     @media (prefers-reduced-motion: reduce) {
-      *, *::before, *::after {
+      *,
+      *::before,
+      *::after {
         scroll-behavior: auto !important;
-        transition-duration: .01ms !important;
         animation-duration: .01ms !important;
         animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+      }
+
+      .reveal {
+        opacity: 1;
+        transform: none;
       }
     }
   </style>
 </head>
 
 <body>
+
+  <!-- Top contact bar -->
+
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="topbar-message">
+        Professional moving, packing and relocation services in Dubai
+      </div>
+
+      <div class="topbar-contact">
+        <a href="mailto:mail@hifimovers.com">mail@hifimovers.com</a>
+        <a href="tel:+971555255890">+971 55 525 5890</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main navigation -->
+
   <header class="site-header">
-    <div class="container header-main">
-      <a class="brand" href="#home" aria-label="Hi-Fi Movers homepage">
-        <span class="brand-mark" aria-hidden="true">H</span>
-        <span class="brand-name">Hi-Fi Movers<small>MOVE WITH CONFIDENCE</small></span>
+    <div class="container header-inner">
+
+      <a class="brand" href="#home" aria-label="HiFi Movers homepage">
+        <span class="brand-mark" aria-hidden="true">HF</span>
+        <span class="brand-copy">
+          <span class="brand-name">HiFi Movers</span>
+          <span class="brand-tagline">Moving made easier</span>
+        </span>
       </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="main-navigation"
+      >
+        <span aria-hidden="true">☰</span>
+      </button>
 
       <nav class="main-nav" id="main-navigation" aria-label="Main navigation">
         <a href="#home">Home</a>
         <a href="#about">About Us</a>
         <a href="#services">Our Services</a>
-        <a href="#journey">How We Move</a>
-        <a href="#storage">Storage</a>
-        <a href="#contact">Contact</a>
+        <a href="#process">How It Works</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#faq">FAQs</a>
+        <a class="nav-cta" href="#contact">Get a Free Quote</a>
       </nav>
 
-      <div class="header-actions">
-        <a class="header-phone" href="tel:+97142596034">
-          +971 4 259 6034
-          <span>Speak with our team</span>
-        </a>
-        <a class="button" href="https://www.hifimovers.com/contact.html">Request a Quote <span aria-hidden="true">↗</span></a>
-      </div>
-
-      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="main-navigation">
-        <span aria-hidden="true">☰</span>
-      </button>
     </div>
   </header>
 
   <main>
-    <section class="hero" id="home">
-      <img
-        class="hero-image"
-        src="https://images.unsplash.com/photo-1600518464441-9306b1b3c4b4?auto=format&fit=crop&w=2000&q=85"
-        alt="Carefully arranged furniture in a bright modern home"
-        fetchpriority="high"
-      >
 
-      <div class="container hero-inner">
-        <div class="hero-content">
-          <span class="eyebrow">Moving and relocation in Dubai</span>
-          <h1>A better move starts with <span>a better plan.</span></h1>
-          <p class="hero-copy">
-            From home and office relocation to packing, furniture installation and storage, Hi-Fi Movers brings the essential parts of your move together.
+    <!-- Hero -->
+
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+
+        <div class="hero-copy reveal">
+          <span class="eyebrow">Your trusted moving partner in Dubai</span>
+
+          <h1>
+            Your Move.<br>
+            Our <span>Commitment.</span>
+          </h1>
+
+          <p class="hero-description">
+            Moving home or relocating your business? HiFi Movers brings
+            packing, transportation, furniture installation and storage
+            services together to make your next move easier to organise.
           </p>
 
           <div class="hero-actions">
-            <a class="button" href="https://www.hifimovers.com/contact.html">Plan Your Move <span aria-hidden="true">↗</span></a>
-            <a class="button button-light" href="#services">Explore Our Services</a>
+            <a
+              class="btn btn-primary"
+              href="https://wa.me/971555255890?text=Hello%20HiFi%20Movers%2C%20I%20would%20like%20to%20request%20a%20moving%20quote."
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Request a Free Quote <span aria-hidden="true">→</span>
+            </a>
+
+            <a class="btn btn-outline" href="#services">
+              Explore Our Services
+            </a>
           </div>
 
-          <div class="hero-note">Residential · Commercial · International</div>
+          <div class="hero-note">
+            <span class="hero-note-mark" aria-hidden="true">✓</span>
+            <span>
+              <strong>One moving partner.</strong>
+              Support from packing to your new destination.
+            </span>
+          </div>
         </div>
-      </div>
 
-      <span class="hero-side-label" aria-hidden="true">Your move, thoughtfully managed</span>
+        <div class="hero-visual reveal" aria-label="Illustration representing organised moving and packing services">
+          <div class="visual-stage">
+            <span class="stage-label">A smoother moving experience</span>
+            <span class="stage-title">A fresh start begins with a better move.</span>
+
+            <div class="stage-orbit"></div>
+            <div class="stage-floor"></div>
+            <div class="moving-box box-large"></div>
+            <div class="moving-box box-medium"></div>
+            <div class="moving-box box-small"></div>
+          </div>
+
+          <div class="floating-card floating-card-one">
+            <span class="floating-card-symbol" aria-hidden="true">✓</span>
+            <span>
+              <strong>Careful handling</strong>
+              <small>Attention to your belongings</small>
+            </span>
+          </div>
+
+          <div class="floating-card floating-card-two">
+            <span class="floating-card-symbol" aria-hidden="true">↗</span>
+            <span>
+              <strong>Moving made easier</strong>
+              <small>Residential and business moves</small>
+            </span>
+          </div>
+        </div>
+
+      </div>
     </section>
 
-    <section class="intro" id="about">
+    <!-- Trust indicators -->
+
+    <section class="trust-strip" aria-label="HiFi Movers service highlights">
+      <div class="container trust-grid">
+
+        <div class="trust-item">
+          <span class="trust-symbol" aria-hidden="true">01</span>
+          <span>
+            <strong>Residential Moving</strong>
+            <small>Homes, villas and apartments</small>
+          </span>
+        </div>
+
+        <div class="trust-item">
+          <span class="trust-symbol" aria-hidden="true">02</span>
+          <span>
+            <strong>Office Relocation</strong>
+            <small>Commercial moving support</small>
+          </span>
+        </div>
+
+        <div class="trust-item">
+          <span class="trust-symbol" aria-hidden="true">03</span>
+          <span>
+            <strong>Packing Services</strong>
+            <small>Organised packing assistance</small>
+          </span>
+        </div>
+
+        <div class="trust-item">
+          <span class="trust-symbol" aria-hidden="true">04</span>
+          <span>
+            <strong>Storage Solutions</strong>
+            <small>Short and long-term options</small>
+          </span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- About -->
+
+    <section class="section" id="about">
       <div class="container intro-grid">
-        <div class="intro-copy">
-          <span class="eyebrow">Meet Hi-Fi Movers</span>
-          <h2>Every move has a story. Let's make yours a smooth one.</h2>
-          <p>
-            Relocating involves more than transporting belongings. It takes preparation, careful handling and coordination at every stage. Hi-Fi Movers is a Dubai-based moving company offering residential, office and international moving services alongside packing, furniture installation and storage solutions.
-          </p>
-          <p>
-            Established in 2012, the company brings multiple moving-related services together to help customers organise the practical details of a change of space.
-          </p>
-          <a class="text-link" href="https://www.hifimovers.com/about.html">Discover Hi-Fi Movers <span aria-hidden="true">→</span></a>
-        </div>
 
-        <div class="intro-visual">
-          <img
-            src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1100&q=85"
-            alt="Welcoming contemporary home interior"
-            loading="lazy"
-          >
-          <div class="intro-stamp">
-            <strong>Since 2012</strong>
-            <span>Moving and relocation services from Dubai</span>
+        <div class="intro-visual reveal" aria-label="Decorative burgundy moving service graphic">
+          <div class="intro-visual-content">
+            <span>HiFi Movers LLC</span>
+            <strong>More than moving. Helping you settle into what comes next.</strong>
           </div>
         </div>
+
+        <div class="intro-content reveal">
+          <span class="eyebrow">Get to know HiFi Movers</span>
+
+          <h2>A moving experience planned around your needs.</h2>
+
+          <p>
+            HiFi Movers is a Dubai-based moving and packing company providing
+            relocation support for homes and businesses. From packing and
+            transportation to furniture installation and storage, our services
+            are designed to help customers manage different parts of their move
+            through one company.
+          </p>
+
+          <p>
+            Every move has its own requirements. Our approach starts with
+            understanding what needs to be moved, where it needs to go and
+            which services will make the transition more convenient.
+          </p>
+
+          <div class="intro-points">
+            <div class="intro-point">
+              <span aria-hidden="true">✓</span>
+              Residential relocation
+            </div>
+
+            <div class="intro-point">
+              <span aria-hidden="true">✓</span>
+              Commercial moving
+            </div>
+
+            <div class="intro-point">
+              <span aria-hidden="true">✓</span>
+              Packing and unpacking
+            </div>
+
+            <div class="intro-point">
+              <span aria-hidden="true">✓</span>
+              Furniture installation
+            </div>
+          </div>
+
+          <a class="text-link" href="https://www.hifimovers.com/about.html">
+            Discover More About Us <span aria-hidden="true">→</span>
+          </a>
+        </div>
+
       </div>
     </section>
 
-    <section class="services" id="services">
+    <!-- Services -->
+
+    <section class="section section-light" id="services">
       <div class="container">
-        <div class="section-heading">
-          <span class="eyebrow">What we can help with</span>
-          <h2>Moving services for every kind of transition.</h2>
-          <p class="section-intro">
-            Choose the service that fits your next step. From a household move to a business relocation, explore the ways Hi-Fi Movers can support your requirements.
+
+        <div class="section-heading reveal">
+          <span class="eyebrow">What we do</span>
+          <h2>Moving and relocation services under one roof.</h2>
+          <p>
+            Whether you are moving into a new home, relocating an office or
+            arranging storage, explore the services available from HiFi Movers.
           </p>
         </div>
 
-        <div class="service-grid">
-          <article class="service-card">
-            <div class="service-icon">
-              <svg viewBox="0 0 32 32" aria-hidden="true">
+        <div class="services-grid">
+
+          <!-- Service icon 1: Residential moving -->
+
+          <article class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32">
                 <path d="M4 14.5 16 5l12 9.5"></path>
                 <path d="M7 13v14h18V13"></path>
                 <path d="M13 27v-8h6v8"></path>
-                <path d="M10 15h3M19 15h3"></path>
+                <path d="M11 15h3M18 15h3"></path>
               </svg>
             </div>
-            <h3>Residential Moving</h3>
-            <p>Moving support for houses, villas and apartments, with services shaped around your household requirements.</p>
-            <a class="text-link" href="https://www.hifimovers.com/contact.html">Discuss your move <span aria-hidden="true">→</span></a>
-          </article>
 
-          <article class="service-card">
-            <div class="service-icon">
-              <svg viewBox="0 0 32 32" aria-hidden="true">
-                <rect x="4" y="7" width="24" height="20" rx="1"></rect>
-                <path d="M11 27V12h10v15M4 16h7M21 16h7M14 16h4"></path>
-                <path d="M12 7V4h8v3"></path>
-              </svg>
-            </div>
-            <h3>Office Relocation</h3>
-            <p>Office and corporate moving services to help businesses organise a change of workplace.</p>
-            <a class="text-link" href="https://www.hifimovers.com/contact.html">Plan an office move <span aria-hidden="true">→</span></a>
-          </article>
-
-          <article class="service-card">
-            <div class="service-icon">
-              <svg viewBox="0 0 32 32" aria-hidden="true">
-                <path d="M4 12h15v13H4zM19 16h5l4 5v4h-9z"></path>
-                <path d="M22 16v5h6M8 25a2.5 2.5 0 1 0 5 0M21 25a2.5 2.5 0 1 0 5 0"></path>
-                <path d="M7 8h12M13 4l-4 4 4 4"></path>
-              </svg>
-            </div>
-            <h3>International Moving</h3>
-            <p>Explore international relocation and worldwide door-to-door delivery services for moves across borders.</p>
-            <a class="text-link" href="https://www.hifimovers.com/contact.html">Enquire about moving abroad <span aria-hidden="true">→</span></a>
-          </article>
-
-          <article class="service-card">
-            <div class="service-icon">
-              <svg viewBox="0 0 32 32" aria-hidden="true">
-                <path d="m16 4 12 6-12 6-12-6 12-6Z"></path>
-                <path d="M4 10v13l12 6 12-6V10M16 16v13"></path>
-                <path d="m10 7 12 6M10 19l3 2M19 22l3-2"></path>
-              </svg>
-            </div>
-            <h3>Packing & Protection</h3>
-            <p>Packing and protective materials designed to help prepare belongings for handling and transportation.</p>
-            <a class="text-link" href="https://www.hifimovers.com/contact.html">Ask about packing <span aria-hidden="true">→</span></a>
-          </article>
-
-          <article class="service-card">
-            <div class="service-icon">
-              <svg viewBox="0 0 32 32" aria-hidden="true">
-                <path d="M5 27V8h22v19M5 14h22M10 8V5h12v3"></path>
-                <path d="M10 27v-8h12v8M13 19v8M19 19v8"></path>
-                <path d="M8 11h2M22 11h2"></path>
-              </svg>
-            </div>
-            <h3>Furniture Installation</h3>
-            <p>Furniture and kitchen cabinet installation services to help complete your space after a move.</p>
-            <a class="text-link" href="https://www.hifimovers.com/contact.html">Discuss installation <span aria-hidden="true">→</span></a>
-          </article>
-
-          <article class="service-card">
-            <div class="service-icon">
-              <svg viewBox="0 0 32 32" aria-hidden="true">
-                <rect x="4" y="5" width="24" height="22" rx="1"></rect>
-                <path d="M4 12h24M12 12v15M20 12v15"></path>
-                <path d="M9 9h3M17 9h3M8 18h2M16 18h2M24 18h1"></path>
-              </svg>
-            </div>
-            <h3>Storage Solutions</h3>
-            <p>Storage options for customers who need additional space during a move or beyond moving day.</p>
-            <a class="text-link" href="https://www.hifimovers.com/contact.html">Explore storage options <span aria-hidden="true">→</span></a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="journey" id="journey">
-      <div class="container">
-        <div class="section-heading">
-          <span class="eyebrow">The moving experience, mapped</span>
-          <h2>One connected journey. Several important details.</h2>
-          <p class="section-intro">
-            A move involves a sequence of practical decisions. Understanding the stages helps you prepare for the transition and identify the services you may need.
-          </p>
-        </div>
-
-        <div class="journey-track">
-          <article class="journey-step">
-            <div class="journey-number">01</div>
-            <h3>Plan</h3>
-            <p>Share your moving requirements, locations and preferred schedule.</p>
-          </article>
-
-          <article class="journey-step">
-            <div class="journey-number">02</div>
-            <h3>Prepare</h3>
-            <p>Organise packing, protective materials and the details of your move.</p>
-          </article>
-
-          <article class="journey-step">
-            <div class="journey-number">03</div>
-            <h3>Move</h3>
-            <p>Coordinate handling and transportation for your belongings.</p>
-          </article>
-
-          <article class="journey-step">
-            <div class="journey-number">04</div>
-            <h3>Set Up</h3>
-            <p>Arrange furniture installation and other services required at the destination.</p>
-          </article>
-
-          <article class="journey-step">
-            <div class="journey-number">05</div>
-            <h3>Settle In</h3>
-            <p>Consider storage options if you need additional space during the transition.</p>
-          </article>
-        </div>
-
-        <div class="journey-footer">
-          <p>Every move is different. The services and arrangements required will depend on your belongings, destination and individual moving needs.</p>
-          <a class="button button-light" href="https://www.hifimovers.com/contact.html">Talk Through Your Move <span aria-hidden="true">↗</span></a>
-        </div>
-      </div>
-    </section>
-
-    <section class="feature">
-      <div class="container feature-grid">
-        <div class="feature-image">
-          <img
-            src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=85"
-            alt="Carefully arranged furniture and living space"
-            loading="lazy"
-          >
-        </div>
-
-        <div class="feature-copy">
-          <span class="eyebrow">More than transportation</span>
-          <h2>Think beyond moving day.</h2>
-          <p>
-            Getting from one place to another is only part of a relocation. Packing, furniture installation and storage can all play a role in making a new space ready for everyday life.
-          </p>
-
-          <ul class="feature-list">
-            <li>Residential and commercial moving options</li>
-            <li>Packing, crating and protective materials</li>
-            <li>Furniture and kitchen cabinet installation</li>
-            <li>Storage options for different requirements</li>
-            <li>International moving and door-to-door delivery enquiries</li>
-          </ul>
-
-          <a class="button" href="https://www.hifimovers.com/contact.html">Find the Right Service <span aria-hidden="true">↗</span></a>
-        </div>
-      </div>
-    </section>
-
-    <section class="pathways">
-      <div class="container">
-        <div class="section-heading center">
-          <span class="eyebrow">Start with your kind of move</span>
-          <h2>Different destinations. Different moving needs.</h2>
-          <p class="section-intro">
-            Choose a starting point that reflects your situation. The Hi-Fi Movers team can help you enquire about the services relevant to your move.
-          </p>
-        </div>
-
-        <div class="pathway-grid">
-          <article class="pathway-card">
-            <img
-              src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=85"
-              alt="Bright residential living room"
-              loading="lazy"
-            >
-            <div class="pathway-content">
-              <span class="eyebrow">For households</span>
-              <h3>Moving Home</h3>
-              <p>Explore moving services for apartments, villas and houses.</p>
-              <a class="text-link" href="https://www.hifimovers.com/contact.html">Enquire about home moving <span aria-hidden="true">→</span></a>
-            </div>
-          </article>
-
-          <article class="pathway-card">
-            <img
-              src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=85"
-              alt="Modern business office interior"
-              loading="lazy"
-            >
-            <div class="pathway-content">
-              <span class="eyebrow">For businesses</span>
-              <h3>Moving Workspaces</h3>
-              <p>Explore office, corporate and IT equipment moving services.</p>
-              <a class="text-link" href="https://www.hifimovers.com/contact.html">Enquire about office moving <span aria-hidden="true">→</span></a>
-            </div>
-          </article>
-
-          <article class="pathway-card">
-            <img
-              src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=900&q=85"
-              alt="Modern international city skyline"
-              loading="lazy"
-            >
-            <div class="pathway-content">
-              <span class="eyebrow">For cross-border moves</span>
-              <h3>Moving Internationally</h3>
-              <p>Ask about international relocation and worldwide delivery options.</p>
-              <a class="text-link" href="https://www.hifimovers.com/contact.html">Enquire about international moving <span aria-hidden="true">→</span></a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="storage" id="storage">
-      <div class="container">
-        <div class="storage-panel">
-          <div class="storage-image">
-            <img
-              src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1100&q=85"
-              alt="Organised interior with space for belongings"
-              loading="lazy"
-            >
-          </div>
-
-          <div class="storage-copy">
-            <span class="eyebrow">Room for your next step</span>
-            <h2>When you need space between places.</h2>
+            <h3>Home Moving</h3>
             <p>
-              Moving schedules do not always line up perfectly. Hi-Fi Movers lists storage facility and self-storage options, including short-term and long-term storage, for customers who need another place for their belongings.
+              Moving to another apartment, villa or house? Arrange packing,
+              transportation and relocation support around your household needs.
             </p>
-            <a class="button" href="https://www.hifimovers.com/contact.html">Ask About Storage <span aria-hidden="true">↗</span></a>
+            <a class="text-link" href="https://www.hifimovers.com/house.html">
+              Explore Home Moving <span aria-hidden="true">→</span>
+            </a>
+          </article>
+
+          <!-- Service icon 2: Office moving -->
+
+          <article class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32">
+                <rect x="5" y="5" width="22" height="22" rx="2"></rect>
+                <path d="M11 27V10h10v17"></path>
+                <path d="M14 14h4M14 18h4M14 22h4"></path>
+                <path d="M9 9h2M21 9h2"></path>
+              </svg>
+            </div>
+
+            <h3>Office and Corporate Moving</h3>
+            <p>
+              Organise your workplace relocation with support for office
+              furniture, equipment, packing and transportation.
+            </p>
+            <a class="text-link" href="https://www.hifimovers.com/office.html">
+              Explore Office Moving <span aria-hidden="true">→</span>
+            </a>
+          </article>
+
+          <!-- Service icon 3: Packing -->
+
+          <article class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32">
+                <path d="m4 11 12-6 12 6-12 6-12-6Z"></path>
+                <path d="M4 11v12l12 6 12-6V11"></path>
+                <path d="M16 17v12"></path>
+                <path d="m10 8 12 6"></path>
+              </svg>
+            </div>
+
+            <h3>Packing and Unpacking</h3>
+            <p>
+              Get help preparing household and office belongings for
+              transportation with packing materials and organised packing support.
+            </p>
+            <a class="text-link" href="https://www.hifimovers.com/">
+              Explore Packing Services <span aria-hidden="true">→</span>
+            </a>
+          </article>
+
+          <!-- Service icon 4: Furniture installation -->
+
+          <article class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32">
+                <path d="M7 14V8h18v6"></path>
+                <path d="M5 14h22v8H5z"></path>
+                <path d="M8 22v5M24 22v5"></path>
+                <path d="M10 14v-3M22 14v-3"></path>
+                <path d="M13 18h6"></path>
+              </svg>
+            </div>
+
+            <h3>Furniture Installation</h3>
+            <p>
+              Arrange furniture dismantling, installation and reassembly
+              support as part of your moving or property setup requirements.
+            </p>
+            <a class="text-link" href="https://www.hifimovers.com/">
+              Explore Furniture Services <span aria-hidden="true">→</span>
+            </a>
+          </article>
+
+          <!-- Service icon 5: Storage -->
+
+          <article class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32">
+                <rect x="4" y="6" width="24" height="21" rx="2"></rect>
+                <path d="M4 12h24M10 6v6M22 6v6"></path>
+                <path d="M10 18h12M10 22h8"></path>
+              </svg>
+            </div>
+
+            <h3>Short and Long-Term Storage</h3>
+            <p>
+              Need additional space during a move or renovation? Explore
+              storage options for household and commercial belongings.
+            </p>
+            <a class="text-link" href="https://www.hifimovers.com/storage.html">
+              Explore Storage <span aria-hidden="true">→</span>
+            </a>
+          </article>
+
+          <!-- Service icon 6: International relocation -->
+
+          <article class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32">
+                <circle cx="16" cy="16" r="12"></circle>
+                <path d="M4 16h24M16 4c3 3.3 4.5 7.3 4.5 12S19 24.7 16 28"></path>
+                <path d="M16 4c-3 3.3-4.5 7.3-4.5 12S13 24.7 16 28"></path>
+                <path d="M7 9h18M7 23h18"></path>
+              </svg>
+            </div>
+
+            <h3>International Relocation</h3>
+            <p>
+              Planning a move across borders? Discuss international moving
+              and worldwide door-to-door delivery arrangements with our team.
+            </p>
+            <a class="text-link" href="https://www.hifimovers.com/blog/hifi-international-relocation-dubai.html">
+              Explore International Moving <span aria-hidden="true">→</span>
+            </a>
+          </article>
+
+        </div>
+
+        <p class="services-note">
+          Additional services include villa moving, apartment moving,
+          worldwide door-to-door delivery, handyman services and kitchen
+          cabinet installation. Contact our team to discuss your requirements.
+        </p>
+
+      </div>
+    </section>
+
+    <!-- Why choose HiFi -->
+
+    <section class="section section-dark" id="why-us">
+      <div class="container why-grid">
+
+        <div class="why-content reveal">
+          <span class="eyebrow">Why choose HiFi Movers</span>
+
+          <h2>A more organised approach to your next move.</h2>
+
+          <p>
+            Choosing a moving company is about more than transportation.
+            It is about finding a team that understands your requirements
+            and can help coordinate the work involved.
+          </p>
+
+          <div class="why-list">
+
+            <div class="why-item">
+              <span class="why-number">01</span>
+              <div>
+                <h3>Services for Different Moving Needs</h3>
+                <p>
+                  From household relocation to office moving and storage,
+                  explore services that can be arranged around your situation.
+                </p>
+              </div>
+            </div>
+
+            <div class="why-item">
+              <span class="why-number">02</span>
+              <div>
+                <h3>Attention to Your Belongings</h3>
+                <p>
+                  Packing and handling support designed to help protect
+                  household and workplace items during a move.
+                </p>
+              </div>
+            </div>
+
+            <div class="why-item">
+              <span class="why-number">03</span>
+              <div>
+                <h3>Moving and Additional Support</h3>
+                <p>
+                  Combine moving, furniture installation and storage
+                  enquiries when planning your relocation.
+                </p>
+              </div>
+            </div>
+
+            <div class="why-item">
+              <span class="why-number">04</span>
+              <div>
+                <h3>A Team You Can Contact</h3>
+                <p>
+                  Speak directly with HiFi Movers to explain your move,
+                  ask questions and request a quotation.
+                </p>
+              </div>
+            </div>
+
           </div>
         </div>
+
+        <div class="why-panel reveal">
+          <div class="why-panel-inner">
+            <span class="why-panel-label">Your relocation, your requirements</span>
+
+            <h3>One move can involve many moving parts.</h3>
+
+            <p>
+              Packing, transportation, furniture installation and storage
+              can all be part of a relocation. Start with a conversation
+              about what you need.
+            </p>
+
+            <div class="why-panel-bottom">
+              <span>Talk to our moving team</span>
+              <strong>HiFi Movers LLC</strong>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
 
-    <section class="trust">
-      <div class="container trust-grid">
-        <div class="trust-intro">
-          <h2>A moving partner with a clear starting point.</h2>
-          <p>Get to know the company and discuss the details of your relocation.</p>
-        </div>
+    <!-- Moving process -->
 
-        <div class="trust-item">
-          <strong>2012</strong>
-          <span>Year the company says it was established</span>
-        </div>
+    <section class="section" id="process">
+      <div class="container">
 
-        <div class="trust-item">
-          <strong>Dubai</strong>
-          <span>Company base in the United Arab Emirates</span>
-        </div>
-
-        <div class="trust-item">
-          <strong>Multiple</strong>
-          <span>Moving, packing, installation and storage services</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="faq">
-      <div class="container faq-grid">
-        <div class="faq-heading">
-          <span class="eyebrow">Helpful information</span>
-          <h2>Questions before your move?</h2>
+        <div class="section-heading reveal">
+          <span class="eyebrow">How it works</span>
+          <h2>Four steps towards your next destination.</h2>
           <p>
-            A little preparation can make it easier to understand which services you need. Here are some useful starting points.
+            Start with your requirements and speak with our team about
+            the moving services that fit your plans.
           </p>
-          <a class="text-link" href="https://www.hifimovers.com/contact.html">Ask the Hi-Fi Movers team <span aria-hidden="true">→</span></a>
         </div>
 
-        <div class="faq-list">
+        <div class="process-grid">
+
+          <article class="process-card reveal">
+            <h3>Tell Us About Your Move</h3>
+            <p>
+              Contact HiFi Movers and share your moving location,
+              destination, preferred date and service requirements.
+            </p>
+          </article>
+
+          <article class="process-card reveal">
+            <h3>Discuss Your Requirements</h3>
+            <p>
+              Explain the items, property type and additional services
+              you may need for your relocation.
+            </p>
+          </article>
+
+          <article class="process-card reveal">
+            <h3>Plan the Moving Work</h3>
+            <p>
+              Discuss the quotation and arrangements with the team
+              before confirming your moving requirements.
+            </p>
+          </article>
+
+          <article class="process-card reveal">
+            <h3>Move to Your New Place</h3>
+            <p>
+              Coordinate the agreed moving, packing, transportation
+              and installation services with the HiFi Movers team.
+            </p>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- International and storage -->
+
+    <section class="section section-light" id="additional-services">
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <span class="eyebrow">More ways we can help</span>
+          <h2>Support beyond your everyday move.</h2>
+          <p>
+            Some relocations need more than a moving vehicle.
+            Explore additional services for international moves and storage.
+          </p>
+        </div>
+
+        <div class="feature-grid">
+
+          <article class="feature-card reveal">
+            <div class="feature-content">
+              <span class="feature-label">Moving beyond borders</span>
+
+              <h3>International Moving and Relocation</h3>
+
+              <p>
+                Planning an overseas relocation? Contact HiFi Movers to
+                discuss international packing, shipping arrangements and
+                worldwide door-to-door delivery services.
+              </p>
+
+              <a
+                class="btn btn-white"
+                href="https://www.hifimovers.com/blog/hifi-international-relocation-dubai.html"
+              >
+                Discover International Moving
+                <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="feature-card feature-card-storage reveal">
+            <div class="feature-content">
+              <span class="feature-label">Space when you need it</span>
+
+              <h3>Short-Term and Long-Term Storage</h3>
+
+              <p>
+                Whether you need space during a home move, office transition
+                or another change, discuss storage options for your belongings.
+              </p>
+
+              <a
+                class="btn btn-white"
+                href="https://www.hifimovers.com/storage.html"
+              >
+                Explore Storage Options
+                <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Customer feedback -->
+
+    <section class="section" id="reviews">
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <span class="eyebrow">Customer experiences</span>
+          <h2>What customers appreciate about HiFi Movers.</h2>
+          <p>
+            Feedback on the existing HiFi Movers website highlights
+            professional support, helpful staff and assistance throughout
+            the moving process.
+          </p>
+        </div>
+
+        <div class="testimonial-grid">
+
+          <article class="testimonial-card reveal">
+            <div class="testimonial-stars" aria-label="Customer review">★★★★★</div>
+
+            <blockquote>
+              Customers have highlighted professional and responsive staff,
+              organised residential moves and support with furniture
+              dismantling and reassembly.
+            </blockquote>
+
+            <div class="testimonial-author">
+              <span class="author-avatar" aria-hidden="true">LK</span>
+              <span>
+                <strong>Laxminarayan Kyatham</strong>
+                <small>Customer feedback displayed on HiFi Movers</small>
+              </span>
+            </div>
+          </article>
+
+          <article class="testimonial-card reveal">
+            <div class="testimonial-stars" aria-label="Customer review">★★★★★</div>
+
+            <blockquote>
+              Feedback describes helpful team members who assist customers
+              with unpacking and arranging furniture after reaching
+              their new home.
+            </blockquote>
+
+            <div class="testimonial-author">
+              <span class="author-avatar" aria-hidden="true">SS</span>
+              <span>
+                <strong>Sindhu Sudhir</strong>
+                <small>Customer feedback displayed on HiFi Movers</small>
+              </span>
+            </div>
+          </article>
+
+          <article class="testimonial-card reveal">
+            <div class="testimonial-stars" aria-label="Customer review">★★★★★</div>
+
+            <blockquote>
+              Customers have also described the team as friendly and
+              supportive, with assistance across the moving process.
+            </blockquote>
+
+            <div class="testimonial-author">
+              <span class="author-avatar" aria-hidden="true">PK</span>
+              <span>
+                <strong>Prajeeth Kurumkulam</strong>
+                <small>Customer feedback displayed on HiFi Movers</small>
+              </span>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="review-link">
+          <a class="text-link" href="https://www.hifimovers.com/" target="_blank" rel="noopener noreferrer">
+            Visit HiFi Movers to explore customer reviews
+            <span aria-hidden="true">→</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FAQ -->
+
+    <section class="section section-light" id="faq">
+      <div class="container faq-layout">
+
+        <div class="faq-intro reveal">
+          <span class="eyebrow">Frequently asked questions</span>
+
+          <h2>Questions about your move?</h2>
+
+          <p>
+            Find answers to common questions about moving, packing,
+            storage and relocation services.
+          </p>
+
+          <a class="btn btn-primary" href="#contact">
+            Ask Our Team
+          </a>
+        </div>
+
+        <div class="faq-list reveal">
+
           <details class="faq-item">
-            <summary>What types of moving services does Hi-Fi Movers offer?</summary>
+            <summary>What moving services does HiFi Movers offer?</summary>
             <div class="faq-answer">
-              The company lists house, villa, apartment, office, corporate and international moving services. It also lists packing, furniture installation and storage options.
+              <p>
+                HiFi Movers offers residential and commercial moving,
+                packing services, furniture installation, storage,
+                international relocation, handyman services and
+                kitchen cabinet installation.
+              </p>
             </div>
           </details>
 
           <details class="faq-item">
-            <summary>Can I enquire about packing services separately?</summary>
+            <summary>Does HiFi Movers provide house moving services?</summary>
             <div class="faq-answer">
-              Yes. Packing, crating, loading and unloading are among the services described on the company's website. Contact the team to discuss the requirements for your move.
+              <p>
+                Yes. The company lists house, villa and apartment moving
+                services. Contact the team to explain your property type
+                and moving requirements.
+              </p>
             </div>
           </details>
 
           <details class="faq-item">
-            <summary>Does Hi-Fi Movers offer office relocation?</summary>
+            <summary>Can I arrange packing materials and packing support?</summary>
             <div class="faq-answer">
-              Office and corporate moving are included in the company's listed services. Contact the team with your workplace location, destination and preferred moving schedule.
+              <p>
+                Yes. HiFi Movers lists packing services and packing
+                materials, including boxes, tape, bubble wrap and
+                protective packing supplies.
+              </p>
             </div>
           </details>
 
           <details class="faq-item">
-            <summary>Are international moving services available?</summary>
+            <summary>Does HiFi Movers handle office relocation?</summary>
             <div class="faq-answer">
-              The company lists international moving and worldwide door-to-door delivery. Contact Hi-Fi Movers to confirm destination coverage, service availability and the arrangements for your route.
+              <p>
+                Yes. Office and corporate moving services are included
+                in the company's service offering. Contact the team
+                to discuss your workplace relocation.
+              </p>
             </div>
           </details>
 
           <details class="faq-item">
-            <summary>Can I ask about short-term or long-term storage?</summary>
+            <summary>Can I arrange furniture dismantling and installation?</summary>
             <div class="faq-answer">
-              The company's website lists storage facility and self-storage options, including short-term and long-term storage. Ask the team about current availability and the options that match your needs.
+              <p>
+                HiFi Movers lists furniture installation services,
+                including furniture dismantling and reassembly.
+                Share your requirements when requesting a quotation.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>Does HiFi Movers provide storage services?</summary>
+            <div class="faq-answer">
+              <p>
+                Yes. The company advertises short-term and long-term
+                storage options. Contact the team to discuss the
+                type of belongings and storage duration you require.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>Does HiFi Movers offer international relocation?</summary>
+            <div class="faq-answer">
+              <p>
+                Yes. HiFi Movers advertises international moving and
+                worldwide door-to-door delivery services. Contact the
+                team to discuss your destination and shipping needs.
+              </p>
             </div>
           </details>
 
           <details class="faq-item">
             <summary>How can I request a moving quotation?</summary>
             <div class="faq-answer">
-              Use the contact page to submit your enquiry, or call the company directly. Include your moving locations, property or office type, preferred date and any additional services you may need.
+              <p>
+                You can call +971 55 525 5890, email
+                mail@hifimovers.com or contact the team through WhatsApp.
+                Share your moving locations, preferred date and service
+                requirements to begin your enquiry.
+              </p>
             </div>
           </details>
+
         </div>
+
       </div>
     </section>
 
+    <!-- Contact CTA -->
+
     <section class="final-cta" id="contact">
-      <div class="container cta-inner">
-        <div class="cta-copy">
-          <span class="eyebrow">Your next move starts here</span>
-          <h2>Let's work out what your move needs.</h2>
+      <div class="container final-cta-inner">
+
+        <div class="final-cta-copy reveal">
+          <span class="eyebrow">Let's plan your next move</span>
+
+          <h2>Ready for a smoother moving experience?</h2>
+
           <p>
-            Tell Hi-Fi Movers where you are moving, where you are going and which services you are considering. Start a conversation about your requirements.
+            Tell us where you are moving and what support you need.
+            Contact HiFi Movers to discuss your requirements and request
+            a moving quotation.
           </p>
         </div>
 
-        <div class="cta-actions">
-          <a class="button" href="https://www.hifimovers.com/contact.html">Request a Quote <span aria-hidden="true">↗</span></a>
-          <a class="button button-dark" href="tel:+97142596034">Call +971 4 259 6034</a>
+        <div class="final-cta-actions reveal">
+          <a
+            class="btn btn-white"
+            href="https://wa.me/971555255890?text=Hello%20HiFi%20Movers%2C%20I%20would%20like%20to%20request%20a%20moving%20quote."
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Request a Quote on WhatsApp
+            <span aria-hidden="true">→</span>
+          </a>
+
+          <a class="btn btn-outline-light" href="tel:+971555255890">
+            Call +971 55 525 5890
+          </a>
         </div>
+
       </div>
     </section>
+
   </main>
 
+  <!-- Footer -->
+
   <footer class="site-footer">
-    <div class="container footer-grid">
-      <div class="footer-brand">
-        <a class="brand" href="#home" aria-label="Hi-Fi Movers homepage">
-          <span class="brand-mark" aria-hidden="true">H</span>
-          <span class="brand-name">Hi-Fi Movers<small>MOVE WITH CONFIDENCE</small></span>
-        </a>
-        <p class="footer-about">
-          Moving, relocation, packing, furniture installation and storage services from Dubai, United Arab Emirates.
-        </p>
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <a class="brand" href="#home" aria-label="HiFi Movers homepage">
+            <span class="brand-mark" aria-hidden="true">HF</span>
+            <span class="brand-copy">
+              <span class="brand-name">HiFi Movers</span>
+              <span class="brand-tagline">Moving made easier</span>
+            </span>
+          </a>
+
+          <p>
+            HiFi Movers provides moving, packing, furniture installation,
+            storage and relocation services for residential and commercial
+            customers in Dubai and beyond.
+          </p>
+
+          <a class="text-link" href="https://www.hifimovers.com/about.html" style="color:#F0A0A2;">
+            About HiFi Movers <span aria-hidden="true">→</span>
+          </a>
+        </div>
+
+        <div>
+          <h3 class="footer-heading">Quick Links</h3>
+
+          <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#services">Our Services</a>
+            <a href="#process">How It Works</a>
+            <a href="#reviews">Customer Reviews</a>
+            <a href="#faq">FAQs</a>
+            <a href="#contact">Contact Us</a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="footer-heading">Our Services</h3>
+
+          <div class="footer-links">
+            <a href="https://www.hifimovers.com/house.html">House Moving</a>
+            <a href="https://www.hifimovers.com/office.html">Office Moving</a>
+            <a href="#services">Packing Services</a>
+            <a href="#services">Furniture Installation</a>
+            <a href="https://www.hifimovers.com/storage.html">Storage Facility</a>
+            <a href="https://www.hifimovers.com/blog/hifi-international-relocation-dubai.html">International Moving</a>
+          </div>
+        </div>
+
+        <div class="footer-contact-column">
+          <h3 class="footer-heading">Contact Information</h3>
+
+          <div class="footer-contact">
+
+            <div class="footer-contact-item">
+              <span class="footer-contact-symbol" aria-hidden="true">⌖</span>
+              <span>
+                <strong>Our Location</strong><br>
+                P.O Box: 379285,<br>
+                Al Quoz Industrial Area 4,<br>
+                Dubai, UAE
+              </span>
+            </div>
+
+            <div class="footer-contact-item">
+              <span class="footer-contact-symbol" aria-hidden="true">☎</span>
+              <span>
+                <strong>Call Us</strong><br>
+                <a href="tel:+971555255890">+971 55 525 5890</a><br>
+                <a href="tel:+97142596034">+971 4 259 6034</a>
+              </span>
+            </div>
+
+            <div class="footer-contact-item">
+              <span class="footer-contact-symbol" aria-hidden="true">✉</span>
+              <span>
+                <strong>Email Us</strong><br>
+                <a href="mailto:mail@hifimovers.com">mail@hifimovers.com</a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+
       </div>
 
-      <div class="footer-column">
-        <h3>Explore</h3>
-        <div class="footer-links">
-          <a href="#about">About Us</a>
-          <a href="#services">Our Services</a>
-          <a href="#journey">The Moving Journey</a>
-          <a href="#storage">Storage Solutions</a>
-          <a href="https://www.hifimovers.com/">Current Website</a>
+      <div class="footer-bottom">
+        <span>© <span id="current-year"></span> HiFi Movers LLC. All rights reserved.</span>
+
+        <div class="footer-bottom-links">
+          <a href="#home">Back to Top ↑</a>
+          <a href="https://www.hifimovers.com/contact.html">Contact</a>
         </div>
       </div>
 
-      <div class="footer-column">
-        <h3>Moving Services</h3>
-        <div class="footer-links">
-          <a href="#services">House Moving</a>
-          <a href="#services">Office Moving</a>
-          <a href="#services">International Moving</a>
-          <a href="#services">Packing Services</a>
-          <a href="#services">Furniture Installation</a>
-        </div>
-      </div>
-
-      <div class="footer-column footer-contact">
-        <h3>Get in Touch</h3>
-        <p>Al Quoz Ind 4, Dubai, UAE<br>P.O. Box 379285</p>
-        <p><a href="tel:+97142596034">+971 4 259 6034</a></p>
-        <p><a href="tel:+971558976014">+971 55 897 6014</a></p>
-        <p><a href="mailto:mail@hifimovers.com">mail@hifimovers.com</a></p>
-        <p><a href="https://www.hifimovers.com/contact.html">Contact page ↗</a></p>
-      </div>
-    </div>
-
-    <div class="container footer-bottom">
-      <span>© <span id="current-year">2026</span> Hi-Fi Movers. All rights reserved.</span>
-      <span>Moving and relocation services in Dubai, UAE.</span>
     </div>
   </footer>
 
-  <div class="mobile-cta" aria-label="Quick contact actions">
-    <a class="button button-dark" href="tel:+97142596034">Call Now</a>
-    <a class="button" href="https://www.hifimovers.com/contact.html">Get a Quote</a>
+  <!-- Exactly two persistent mobile CTA buttons -->
+
+  <div class="mobile-actions" aria-label="Quick contact actions">
+    <a class="btn btn-outline" href="tel:+971555255890">
+      Call Now
+    </a>
+
+    <a
+      class="btn btn-primary"
+      href="https://wa.me/971555255890?text=Hello%20HiFi%20Movers%2C%20I%20would%20like%20to%20discuss%20a%20move."
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      WhatsApp
+    </a>
   </div>
 
   <script>
-    const menuButton = document.querySelector(".menu-toggle");
-    const navigation = document.querySelector(".main-nav");
+    (() => {
+      "use strict";
 
-    menuButton.addEventListener("click", () => {
-      const isOpen = navigation.classList.toggle("is-open");
-      menuButton.setAttribute("aria-expanded", String(isOpen));
-      menuButton.setAttribute("aria-label", isOpen ? "Close navigation" : "Open navigation");
-      menuButton.querySelector("span").textContent = isOpen ? "×" : "☰";
-    });
+      const menuButton = document.querySelector(".menu-toggle");
+      const navigation = document.querySelector(".main-nav");
+      const navigationLinks = navigation
+        ? navigation.querySelectorAll("a")
+        : [];
 
-    navigation.querySelectorAll("a").forEach((link) => {
-      link.addEventListener("click", () => {
-        navigation.classList.remove("is-open");
-        menuButton.setAttribute("aria-expanded", "false");
-        menuButton.setAttribute("aria-label", "Open navigation");
-        menuButton.querySelector("span").textContent = "☰";
+      if (menuButton && navigation) {
+        const closeMenu = () => {
+          navigation.classList.remove("is-open");
+          menuButton.setAttribute("aria-expanded", "false");
+          menuButton.setAttribute("aria-label", "Open navigation menu");
+          document.body.classList.remove("menu-open");
+          menuButton.querySelector("span").textContent = "☰";
+        };
+
+        menuButton.addEventListener("click", () => {
+          const isOpen = navigation.classList.toggle("is-open");
+
+          menuButton.setAttribute("aria-expanded", String(isOpen));
+          menuButton.setAttribute(
+            "aria-label",
+            isOpen ? "Close navigation menu" : "Open navigation menu"
+          );
+
+          menuButton.querySelector("span").textContent = isOpen ? "×" : "☰";
+          document.body.classList.toggle("menu-open", isOpen);
+        });
+
+        navigationLinks.forEach((link) => {
+          link.addEventListener("click", closeMenu);
+        });
+
+        document.addEventListener("keydown", (event) => {
+          if (event.key === "Escape") {
+            closeMenu();
+          }
+        });
+
+        window.addEventListener("resize", () => {
+          if (window.innerWidth > 820) {
+            closeMenu();
+          }
+        });
+      }
+
+      // Keep the footer year current.
+      const yearElement = document.getElementById("current-year");
+
+      if (yearElement) {
+        yearElement.textContent = new Date().getFullYear();
+      }
+
+      // Reveal content when it enters the viewport.
+      const revealElements = document.querySelectorAll(".reveal");
+
+      if ("IntersectionObserver" in window) {
+        const revealObserver = new IntersectionObserver(
+          (entries, observer) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("is-visible");
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          {
+            threshold: 0.12,
+            rootMargin: "0px 0px -35px 0px"
+          }
+        );
+
+        revealElements.forEach((element) => {
+          revealObserver.observe(element);
+        });
+      } else {
+        revealElements.forEach((element) => {
+          element.classList.add("is-visible");
+        });
+      }
+
+      // Keep one FAQ item open at a time for a cleaner reading experience.
+      const faqItems = document.querySelectorAll(".faq-item");
+
+      faqItems.forEach((item) => {
+        item.addEventListener("toggle", () => {
+          if (!item.open) return;
+
+          faqItems.forEach((otherItem) => {
+            if (otherItem !== item && otherItem.open) {
+              otherItem.open = false;
+            }
+          });
+        });
       });
-    });
-
-    document.getElementById("current-year").textContent = new Date().getFullYear();
+    })();
   </script>
+
 </body>
 </html>
